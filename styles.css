@@ -8,7 +8,7 @@ html, body {
   height: 100%;
   font-family: 'Cabin', sans-serif;
   color: #fff;
-  background: url('Background.jpg') center/cover no-repeat;
+  background: black;
 }
 
 /* Navbar Styles */
