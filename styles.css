@@ -81,7 +81,7 @@ html, body {
 
 .hero-overlay h1 {
   font-size: 3.5rem;
-  color: #FFB612;
+  color: #FFFFFF;
 }
 
 .hero-overlay p {
@@ -102,7 +102,7 @@ html, body {
 }
 
 .cta:hover {
-  background: #DE3831;
+  background: #006A3D;
 }
 
 /* About Section */
