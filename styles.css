@@ -62,7 +62,7 @@ html, body {
 
 /* Hero Section */
 .hero {
-  background: url('Background.jpg') center/cover no-repeat;
+  background: black;
   height: 90vh;
   display: flex;
   align-items: center;
