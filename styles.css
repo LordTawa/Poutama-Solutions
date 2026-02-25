@@ -107,18 +107,40 @@ h1 {
 /* Call to Action */
 .cta {
   display: inline-block;
+  float: right;
+  font-size: 3vh;
   background: #007A4D;
   color: #fff;
-  padding: 0.8rem 1.5rem;
+  padding: 0.8rem 3.6rem;
   margin-top: 1rem;
-  border-radius: 8px;
+  border-radius: 30px;
   text-decoration: none;
-  text-align: right;
+  text-align: center;
   transition: background 0.3s ease;
 }
 
 .cta:hover {
   background: #006A3D;
+}
+
+.cta2 {
+  display: inline-block;
+  float: right;
+  font-size: 3vh;
+  background: rgb(240, 240, 240, 0.4);
+  color: #fff;
+  padding: 0.8rem 3.6rem;
+  margin-top: 1rem;
+  margin-right: 2vh;
+  border-radius: 30px;
+  text-decoration: none;
+  text-align: center;
+  transition: background 0.3s ease;
+}
+
+.cta2:hover {
+  background: rgb(230, 230, 230, 1);
+  color: rgb(100, 100, 100, 1);
 }
 
 /* About Section */
