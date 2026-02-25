@@ -89,7 +89,7 @@ html, body {
 }
 
 .gradient-overlay {
-  background: linear-gradient(to left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url('Background.jpg');
+  background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url('Background.jpg');
   background-size: cover; 
   background-position: center;
   height: 100%;
