@@ -88,6 +88,15 @@ html, body {
   margin: 1rem 0;
 }
 
+.gradient-overlay {
+  background: linear-gradient(to left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url('Background.jpg');
+  background-size: cover; 
+  background-position: center;
+  height: 100%;
+  width: 100%;
+}
+
+
 /* Call to Action */
 .cta {
   display: inline-block;
