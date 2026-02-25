@@ -11,6 +11,10 @@ html, body {
   background: black;
 }
 
+h1 {
+	font-weight: 200;
+}
+
 /* Navbar Styles */
 .navbar {
   position: fixed;
