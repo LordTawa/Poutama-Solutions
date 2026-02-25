@@ -67,29 +67,31 @@ html, body {
   display: flex;
   align-items: center;
   position: relative;
+  justify-content: right;
 }
 
 .hero-overlay {
   z-index: 1000;
   text-align: left;
-  background: rgba(0, 0, 0, 0.7);
   padding: 4rem;
   border-radius: 12px;
   width: 80%;
 }
 
 .hero-overlay h1 {
-  font-size: 3.5rem;
-  color: #FFFFFF;
+  font-size: 6.5rem;
+  color: #000000;
+  text-align: right;
 }
 
 .hero-overlay p {
   font-size: 1.3rem;
   margin: 1rem 0;
+  text-align: right;
 }
 
 .gradient-overlay {
-  background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url('Marae.jpg');
+  background: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(0, 0, 0, 0)), url('Marae.jpg');
   background-size: cover; 
   background-position: center;
   margin-top: -11.5vh;
@@ -107,6 +109,7 @@ html, body {
   margin-top: 1rem;
   border-radius: 8px;
   text-decoration: none;
+  text-align: right;
   transition: background 0.3s ease;
 }
 
@@ -420,7 +423,7 @@ section {
   top: 0;
   width: 100%;
   z-index: 3000;
-  background: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(5px);
   transition: background 0.4s ease;
 }
