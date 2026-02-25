@@ -29,6 +29,14 @@ h1 {
   z-index: 3000;
 }
 
+.nav1 { 
+  color:#556a3d; 
+}
+
+.nav2 {
+  color: #646464;
+}
+
 .logo-text img {
   height: 4rem;
 }
