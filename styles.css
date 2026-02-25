@@ -109,9 +109,9 @@ h1 {
   display: inline-block;
   float: right;
   font-size: 3vh;
-  background: rgb(137, 174, 113, 0.7);
-  border: 1px solid rgb(100, 100, 100);
-  color: rgb(100, 100, 100);
+  background: rgb(85, 106, 61, 0.8);
+  border: 1px solid white;
+  color: white;
   padding: 0.8rem 3.6rem;
   margin-top: 1rem;
   border-radius: 30px;
@@ -121,9 +121,9 @@ h1 {
 }
 
 .cta:hover {
-  background: rgb(85, 106, 61, 0.8);
-  border: 1px solid white;
-  color: white;
+  background: rgb(137, 174, 113, 0.7);
+  border: 1px solid rgb(100, 100, 100);
+  color: rgb(100, 100, 100);
 }
 
 .cta2 {
