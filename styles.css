@@ -30,11 +30,18 @@ h1 {
 }
 
 .nav1 { 
-  color:#556a3d; 
+  color: #556a3d; 
+  transition: transform 0.3s ease;
+}
+.nav1:hover {
+  transform: scale(1.05);
 }
 
 .nav2 {
   color: #646464;
+}
+.nav2:hover {
+  transform: scale(1.05);
 }
 
 .logo-text img {
