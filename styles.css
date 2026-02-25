@@ -39,6 +39,7 @@ h1 {
 
 .nav2 {
   color: #646464;
+  transition: transform 0.3s ease;
 }
 .nav2:hover {
   transform: scale(1.05);
