@@ -31,6 +31,8 @@ h1 {
 
 .nav1 { 
   color: #556a3d; 
+  text-decoration: none;
+  font-size: 1.5vw;
   transition: transform 0.3s ease;
 }
 .nav1:hover {
@@ -39,6 +41,8 @@ h1 {
 
 .nav2 {
   color: #646464;
+  text-decoration: none;
+  font-size: 1.5vw;
   transition: transform 0.3s ease;
 }
 .nav2:hover {
