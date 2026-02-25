@@ -175,8 +175,9 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  padding: 5rem 2rem;
-  background: #111;
+  width: 50%;
+  padding: 3rem 3rem;
+  background: #000000;
 }
 
 .about-section-text {
@@ -185,18 +186,19 @@ h1 {
 }
 
 .about-section h4 {
-  color: #FFB612;
+  color: #646464;
   font-size: 2.5rem;
   margin-bottom: 1rem;
 }
 
 .about-section h1 {
-  color: #FFB652;
+  color: #FFFFFF;
   font-size: 2.5rem;
   margin-bottom: 1rem;
 }
 
 .about-section p {
+  color: #FFFFFF;
   font-size: 1.1rem;
   line-height: 1.6;
 }
