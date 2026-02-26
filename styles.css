@@ -207,9 +207,9 @@ h1 {
 }
 
 .about-image img {
-  width: 70%;
-  border: 6px solid #FFB612;
-  border-radius: 10px;
+  width: 50%;
+  border: 6px solid #000000;
+  border-radius: 30px;
 }
 
 /* Grid Layout */
