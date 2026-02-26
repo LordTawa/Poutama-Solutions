@@ -201,7 +201,7 @@ h1 {
 
 .about-section h1 {
   color: #FFFFFF;
-  font-size: 2.5rem;
+  font-size: 3rem;
   margin-bottom: 1rem;
 }
 
@@ -213,7 +213,10 @@ h1 {
 
 .about-image {
   flex: 1;
-  padding: 1rem;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  height: 70vh;
 }
 
 .about-image img {
