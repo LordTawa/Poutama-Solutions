@@ -16,6 +16,8 @@ h1 {
 }
 
 .black-background {
+	margin-top: -11.2vh;
+	margin-left: -2.9vw;
 	background: black;
 	width: 100vw;
 	height: 100vh;
