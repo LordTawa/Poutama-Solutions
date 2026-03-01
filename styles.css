@@ -182,13 +182,12 @@ h1 {
 
 .cta3 {
   display: inline-block;
-  float: right;
   font-size: 3vh;
   background: rgb(85, 106, 61, 0.8);
   border: 1px solid white;
   color: white;
   padding: 0.8rem 3.6rem;
-  margin-top: 1rem;
+  margin-top: 2rem;
   border-radius: 30px;
   text-decoration: none;
   text-align: center;
@@ -257,8 +256,13 @@ h1 {
 	padding: 18.5vh;
 	
 .cta-section h1 {
-	font-size: 4rem;
+	font-size: 3rem;
 	color: #000000;
+	font-weight: 100;
+}
+
+.cta-section p {
+	font-size: 1.2rem;
 }
 
 }
