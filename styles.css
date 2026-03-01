@@ -239,14 +239,13 @@ h1 {
 }
 
 .about-image {
-  flex: 1;
-  align-content: right;
-  text-align: right;
-  height: 100vh;
+  float: right;
+  width: 50%;
+  height: 100%;
 }
 
 .about-image img {
-  width: 40%;
+  width: 40vw;
   border: 6px solid #000000;
   border-radius: 30px;
 }
