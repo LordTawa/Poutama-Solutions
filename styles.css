@@ -272,16 +272,13 @@ h1 {
   display: inline-block;
   grid-template-areas:
     "title"
-    "image"
     "text";
   grid-template-columns: 1.6fr 0.2fr;
   gap: 0.4rem;
-  margin: 0rem auto;
-  padding: 2rem;
   border-radius: 12px;
   color: #fff;
-  background: rgb(0, 0, 0, 0.7);
-  margin: 2vw;
+  background: rgb(255, 255, 255, 1);
+  width: 20vw;
 }
 
 .card-title {
@@ -289,7 +286,7 @@ h1 {
   text-align: center;
   padding: 0.3rem;
   border-radius: 12px;
-  font-size: 4rem;
+  font-size: 3vw;
   width: 100%;
   margin-left: 0vw;
   margin-bottom: 2rem;
@@ -314,7 +311,6 @@ h1 {
 .card-text {
   grid-area: text;
   background: #222;
-  padding: 1rem;
   border-radius: 10px;
   margin-top: 2vh;
   width: 100%;
@@ -325,7 +321,7 @@ h1 {
   justify-content: center;  
   align-items: center;       
   padding: 2vw 20vw;     
-  background: #FFB612;       
+  background: #FFFFFF;       
   color: #000;              
   border-radius: 8px;           
   font-weight: 700;
