@@ -203,9 +203,14 @@ h1 {
 
 /* About Section */
 .about-section {
+  margin-left: -3vw;
+  background: black;
+  width: 101vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   align-items: center;
-  width: 50%;
   padding: 3rem 4rem;
   background: #000000;
 }
@@ -213,6 +218,7 @@ h1 {
 .about-section-text {
   flex: 1;
   padding: 1rem;
+  width: 50%;
 }
 
 .about-section h4 {
@@ -230,18 +236,18 @@ h1 {
   color: #FFFFFF;
   font-size: 1.1rem;
   line-height: 1.6;
+  width: 50%;
 }
 
 .about-image {
   flex: 1;
-  align-content: center;
-  justify-content: center;
-  text-align: center;
+  align-content: right;
+  text-align: right;
   height: 100vh;
 }
 
 .about-image img {
-  width: 80%;
+  width: 40%;
   border: 6px solid #000000;
   border-radius: 30px;
 }
