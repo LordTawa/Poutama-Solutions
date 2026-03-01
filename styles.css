@@ -267,6 +267,94 @@ h1 {
   padding: 0rem 6rem;
 }
 
+/* Cards */
+.card {
+  display: inline-block;
+  grid-template-areas:
+    "title"
+    "image"
+    "text";
+  grid-template-columns: 1.6fr 0.2fr;
+  gap: 0.4rem;
+  margin: 0rem auto;
+  padding: 2rem;
+  border-radius: 12px;
+  color: #fff;
+  background: rgb(0, 0, 0, 0.7);
+  margin: 2vw;
+}
+
+.card-title {
+  grid-area: title;
+  text-align: center;
+  padding: 0.3rem;
+  border-radius: 12px;
+  font-size: 4rem;
+  width: 100%;
+  margin-left: 0vw;
+  margin-bottom: 2rem;
+  font-weight: bold;
+  background: #111;
+}
+
+.card-image {
+  grid-area: image;
+  width: 21.5vw;
+  height: 21.5vw;
+}
+
+.card-image img {
+  width: 21.5vw;
+  height: 21.5vw;
+  border-radius: 10px;
+  display: block;
+  border: 6px solid #007A4D;
+}
+
+.card-text {
+  grid-area: text;
+  background: #222;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-top: 2vh;
+  width: 100%;
+}
+
+.card-link a {
+  display: inline-flex;     
+  justify-content: center;  
+  align-items: center;       
+  padding: 2vw 20vw;     
+  background: #FFB612;       
+  color: #000;              
+  border-radius: 8px;           
+  font-weight: 700;
+  text-decoration: none;     
+  min-width: 150px;      
+  text-align: center;
+  transition: background 0.3s;
+}
+
+.card-link {
+  z-index: 20000;
+  grid-area: link;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  display: inline-block;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  margin-top: 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.card-link a:hover {
+  background: #DE3831;
+  transform: scale(1.1);
+}
+
 /* CTA Section */
 .cta-section {
 	background: #DDDDDD;
