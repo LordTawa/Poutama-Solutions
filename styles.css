@@ -225,6 +225,10 @@ h1 {
   border-radius: 30px;
 }
 
+/* cta sectin */
+.cta-section {
+	background: #999999
+}
 /* Grid Layout */
 .grid {
   display: grid;
