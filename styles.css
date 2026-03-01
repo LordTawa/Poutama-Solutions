@@ -64,7 +64,7 @@ h1 {
 
 @media (max-width: 800px) {
   .nav-links {
-    margin-right: -5vw;
+    margin-right: 0vw;
   }
 }
 
