@@ -203,9 +203,8 @@ h1 {
 
 /* About Section */
 .about-section {
-  margin-left: -3vw;
   background: black;
-  width: 101vw;
+  width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
