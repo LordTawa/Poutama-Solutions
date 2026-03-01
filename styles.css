@@ -15,6 +15,16 @@ h1 {
 	font-weight: 500;
 }
 
+.black-background {
+	margin-top: -11.2vh;
+	margin-left: -2.9vw;
+	background: black;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+}
+
 /* Navbar Styles */
 .navbar {
   position: fixed;
@@ -26,16 +36,7 @@ h1 {
   justify-content: space-between;
   align-items: center;
   padding: 0.7rem 1rem;
-  z-index: 1000;
-}
-
-.nav-links {
-  z-index: 999;
-  display: flex;
-  list-style: none;
-  gap: 1.14em;
-  justify-content: right;
-  margin-right: 0vw;
+  z-index: 3000;
 }
 
 .nav1 { 
@@ -60,6 +61,15 @@ h1 {
 
 .logo-text img {
   height: 4rem;
+}
+
+.nav-links {
+  z-index: 30000;
+  display: flex;
+  list-style: none;
+  gap: 1.14em;
+  justify-content: right;
+  margin-right: 0vw;
 }
 
 @media (max-width: 800px) {
@@ -243,7 +253,6 @@ h1 {
 	text-align: center;
 	height: 70vh;
 	padding: 15vh;
-}
 	
 .cta-section-header {
 	font-size: 3rem;
@@ -257,6 +266,7 @@ h1 {
 	font-size: 1.2rem;
 }
 
+}
 /* Grid Layout */
 .grid {
   display: grid;
@@ -318,8 +328,23 @@ footer {
     flex-wrap: wrap;
     gap: 0.5rem;
   }
+  .divider, .about-divider {
+    display: none;
+  }
 }
 
+.divider, .about-divider {
+  width: 100vw;
+  margin-left: -2rem;
+  line-height: 0;
+  margin-top: -20rem;
+}
+
+.divider svg, .about-divider svg {
+  display: block;
+  width: 100vw;
+  height: auto;
+}
 
 @media (max-width: 600px) {
   .logo-text {
@@ -334,6 +359,22 @@ footer {
 section {
   position: relative;
   padding: 5rem 2rem;
+}
+
+.about, .coataltable, .atmosphere, .contact {
+  text-align: center;
+}
+
+.about { background: #111; }
+.coataltable { background: #222; }
+.atmosphere { background: #111; }
+.contact { background: url('Background.jpg'); }
+
+.contact-overlay {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 2rem;
+  border-radius: 12px;
 }
 
 /* Hamburger Menu */
@@ -384,6 +425,19 @@ section {
   .hamburger {
     display: flex;
   }
+  }
+}
+
+@media (max-width: 762px) {
+  .about-image {
+    display: none;
+  }
+  .about {
+    height: 107vh;
+  }
+
+  .about-text {
+    font-size: 24px;
   }
 }
 
