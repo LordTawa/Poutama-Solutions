@@ -202,7 +202,7 @@ h1 {
 
 /* About Section */
 .about-section {
-  background: black;
+  background: #556a3d;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -210,7 +210,6 @@ h1 {
   flex-wrap: wrap;
   align-items: center;
   padding: 3rem 4rem;
-  background: #000000;
 }
 
 .about-section-text {
@@ -219,7 +218,7 @@ h1 {
 }
 
 .about-section h4 {
-  color: #646464;
+  color: #000000;
   font-size: 1.5rem;
 }
 
@@ -244,11 +243,11 @@ h1 {
 
 .about-image img {
   width: 80%;
-  border: 6px solid #000000;
+  border: 6px solid #556a3d;
   border-radius: 30px;
 }
 
-/* cta sectin */
+/* CTA Section */
 .cta-section {
 	background: #999999;
 	text-align: center;
