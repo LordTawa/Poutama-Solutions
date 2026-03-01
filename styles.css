@@ -253,12 +253,14 @@ h1 {
 	background: #999999;
 	text-align: center;
 	height: 70vh;
-	padding: 18.5vh;
+	padding: 15vh;
 	
-.cta-section h1 {
+.cta-section-header {
 	font-size: 3rem;
 	color: #000000;
 	font-weight: 100;
+	margin-bottom: 1rem;
+	padding: 1rem;
 }
 
 .cta-section p {
