@@ -243,7 +243,8 @@ h1 {
 	text-align: center;
 	height: 70vh;
 	padding: 15vh;
-	
+}
+
 .cta-section-header {
 	font-size: 3rem;
 	color: #000000;
@@ -254,8 +255,6 @@ h1 {
 
 .cta-section p {
 	font-size: 1.2rem;
-}
-	
 }
 
 /* Footer */
