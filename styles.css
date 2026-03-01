@@ -237,6 +237,12 @@ h1 {
   border-radius: 30px;
 }
 
+/* Capability Section */
+.capability-section {
+	background: #000000;
+	color: #FFFFFF;
+}
+
 /* CTA Section */
 .cta-section {
 	background: #DDDDDD;
