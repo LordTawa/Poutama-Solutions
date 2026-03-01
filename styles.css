@@ -243,6 +243,24 @@ h1 {
 	color: #FFFFFF;
 }
 
+.capability-section h4 {
+  color: #556a3d;
+  font-size: 1.5rem;
+}
+
+.capability-section h1 {
+  color: #FFFFFF;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.capability-section p {
+  color: #FFFFFF;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  width: 100%;
+}
+
 /* CTA Section */
 .cta-section {
 	background: #DDDDDD;
