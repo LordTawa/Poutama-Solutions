@@ -246,10 +246,19 @@ h1 {
   border-radius: 30px;
 }
 
-/* cta sectin */
+/* CTA Section */
+
 .cta-section {
-	background: #999999
+	background: #999999;
+	text-align: center;
+	height: 70vh;
+	padding: 18.5vh;
+	
+.cta-section h1 {
+	font-size: 4rem;
+	color: #000000;
 }
+	
 /* Grid Layout */
 .grid {
   display: grid;
