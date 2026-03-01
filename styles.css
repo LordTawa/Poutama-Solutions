@@ -15,16 +15,6 @@ h1 {
 	font-weight: 500;
 }
 
-.black-background {
-	margin-top: -11.2vh;
-	margin-left: -2.9vw;
-	background: black;
-	width: 100vw;
-	height: 100vh;
-	display: flex;
-	justify-content: center;
-}
-
 /* Navbar Styles */
 .navbar {
   position: fixed;
@@ -265,47 +255,7 @@ h1 {
 .cta-section p {
 	font-size: 1.2rem;
 }
-
-}
-/* Grid Layout */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-}
-
-.item {
-  background: #111;
-  border-radius: 10px;
-  overflow: hidden;
-  transition: transform 0.3s ease;
-}
-
-.item img {
-  width: 100%;
-  display: block;
-}
-
-.item h3 {
-  padding: 1rem;
-  font-size: 1.5rem;
-}
-
-.item:hover {
-  transform: scale(1.05);
-}
-
-/* Contact Section */
-.contact {
-  text-align: center;
-  padding: 5rem 2rem;
-  background: #222;
-}
-
-.contact h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  color: #002395;
+	
 }
 
 /* Footer */
@@ -333,19 +283,6 @@ footer {
   }
 }
 
-.divider, .about-divider {
-  width: 100vw;
-  margin-left: -2rem;
-  line-height: 0;
-  margin-top: -20rem;
-}
-
-.divider svg, .about-divider svg {
-  display: block;
-  width: 100vw;
-  height: auto;
-}
-
 @media (max-width: 600px) {
   .logo-text {
     height: 2rem;
@@ -359,22 +296,6 @@ footer {
 section {
   position: relative;
   padding: 5rem 2rem;
-}
-
-.about, .coataltable, .atmosphere, .contact {
-  text-align: center;
-}
-
-.about { background: #111; }
-.coataltable { background: #222; }
-.atmosphere { background: #111; }
-.contact { background: url('Background.jpg'); }
-
-.contact-overlay {
-  text-align: center;
-  background: rgba(0, 0, 0, 0.7);
-  padding: 2rem;
-  border-radius: 12px;
 }
 
 /* Hamburger Menu */
@@ -435,7 +356,6 @@ section {
   .about {
     height: 107vh;
   }
-
   .about-text {
     font-size: 24px;
   }
