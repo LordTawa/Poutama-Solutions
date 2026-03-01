@@ -239,6 +239,12 @@ h1 {
 
 /* Capability Section */
 .capability-section {
+	padding: 3rem 4rem;
+	display: flex;
+	text-align: center;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	background: #000000;
 	color: #FFFFFF;
 }
@@ -258,7 +264,7 @@ h1 {
   color: #FFFFFF;
   font-size: 1.1rem;
   line-height: 1.6;
-  width: 100%;
+  padding: 0rem 6rem;
 }
 
 /* CTA Section */
