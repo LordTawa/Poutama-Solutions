@@ -26,7 +26,16 @@ h1 {
   justify-content: space-between;
   align-items: center;
   padding: 0.7rem 1rem;
-  z-index: 3000;
+  z-index: 1000;
+}
+
+.nav-links {
+  z-index: 999;
+  display: flex;
+  list-style: none;
+  gap: 1.14em;
+  justify-content: right;
+  margin-right: 0vw;
 }
 
 .nav1 { 
@@ -51,15 +60,6 @@ h1 {
 
 .logo-text img {
   height: 4rem;
-}
-
-.nav-links {
-  z-index: 30000;
-  display: flex;
-  list-style: none;
-  gap: 1.14em;
-  justify-content: right;
-  margin-right: 0vw;
 }
 
 @media (max-width: 800px) {
