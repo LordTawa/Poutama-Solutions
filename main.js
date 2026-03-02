@@ -46,3 +46,43 @@ document.addEventListener("DOMContentLoaded", () => {
   } else {
     console.info("LOL! THIS CODE IS BROKEN(hamburger:", !!hamburger, "nav:", !!nav, ")");
   }
+
+  let lastScrollY = window.scrollY || 0;
+
+  const heroHeight = hero ? hero.offsetHeight : 0;
+  const heroBottom = Math.max(heroHeight * 0.8, 0);
+
+  header.classList.remove("header--hidden");
+
+  let ticking = false;
+  window.addEventListener("scroll", () => {
+    if (!ticking) {
+      window.requestAnimationFrame(() => {
+        const currentScroll = window.scrollY || 0;
+
+        if (currentScroll > heroBottom) {
+          header.classList.add("header--visible");
+        } else {
+          header.classList.remove("header--visible");
+        }
+		  
+		if (currentScroll > lastScrollY && currentScroll > heroBottom + 100) {		  
+			header.classList.add("header--hidden");
+		} else if (currentScroll < lastScrollY - 20) {
+			header.classList.remove("header--hidden");
+		}
+
+        lastScrollY = currentScroll;
+        ticking = false;
+      });
+      ticking = true;
+    }
+  });
+  window.addEventListener("resize", () => {
+    const desktopBreakpoint = 900; // 
+    if (window.innerWidth > desktopBreakpoint) {
+      nav && nav.classList.remove("active");
+      hamburger && hamburger.classList.remove("active");
+    }
+  });
+});
