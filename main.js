@@ -65,12 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
         } else {
           header.classList.remove("header--visible");
         }
-		  
-		if (currentScroll > lastScrollY && currentScroll > heroBottom + 100) {		  
-			header.classList.add("header--hidden");
-		} else if (currentScroll < lastScrollY - 20) {
-			header.classList.remove("header--hidden");
-		}
+		
 
         lastScrollY = currentScroll;
         ticking = false;
