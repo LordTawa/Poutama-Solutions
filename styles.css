@@ -12,7 +12,11 @@ html, body {
 }
 
 h1 {
-	font-weight: 500;
+  font-weight: 500;
+}
+
+ul {
+  list-style: none;
 }
 
 /* Navbar Styles */
