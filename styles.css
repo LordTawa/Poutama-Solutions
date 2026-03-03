@@ -19,6 +19,10 @@ ul {
   list-style: none;
 }
 
+li {
+	margin-top: 2vh;
+}
+
 /* Navbar Styles */
 .navbar {
   position: fixed;
@@ -398,23 +402,23 @@ footer {
 }
 
 .footer-biography {
-	padding: 1rem 1rem;
+	padding: 4vh 3vw;
 	float: left;
 	text-align: left;
 	flex-wrap: wrap;
-	width: 50vw;
+	width: 40vw;
 }
 
 .footer-links {
-	padding: 1rem 1rem;
+	padding: 4vh 7vw;
 	float: left;
 	text-align: left;
 	flex-wrap: wrap;
-	width: 20vw;
+	width: 30vw;
 }
 
 .footer-contact {
-	padding: 1rem 1rem;
+	padding: 4vh 3vw;
 	float: right;
 	text-align: left;
 	flex-wrap: wrap;
