@@ -204,7 +204,7 @@ h1 {
 .about-section {
   background: #556a3d;
   width: 100vw;
-  height: 100vh;
+  height: 110vh;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -250,6 +250,7 @@ h1 {
 /* Capability Section */
 .capability-section {
 	padding: 3rem 4rem;
+	height: 110vh;
 	display: flex;
 	text-align: center;
 	flex-direction: column;
@@ -390,6 +391,7 @@ footer {
   color: #ccc;
   width: 100%;
   margin-bottom: -10rem;
+  height: 55vh;
 }
 
 /* Media Queries */
