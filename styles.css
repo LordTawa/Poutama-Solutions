@@ -393,6 +393,18 @@ footer {
   height: 55vh;
 }
 
+.footer-biography {
+}
+
+.footer-links {
+}
+
+.footer-contact {
+}
+
+.footer-text {
+}
+
 /* Media Queries */
 @media (max-width: 768px) {
   .about {
