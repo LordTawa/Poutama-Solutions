@@ -394,15 +394,34 @@ footer {
 }
 
 .footer-biography {
+	padding: 1rem 1rem;
+	float: left;
+	text-align: left;
+	flex-wrap: wrap;
+	width: 50vw;
 }
 
 .footer-links {
+	padding: 1rem 1rem;
+	float: left;
+	text-align: left;
+	flex-wrap: wrap;
+	width: 20vw;
 }
 
 .footer-contact {
+	padding: 1rem 1rem;
+	float: right;
+	text-align: left;
+	flex-wrap: wrap;
+	width: 30vw;
 }
 
 .footer-text {
+	padding: 1rem 1rem;
+	float: left;
+	text-align: left;
+	width: 100vw;
 }
 
 /* Media Queries */
