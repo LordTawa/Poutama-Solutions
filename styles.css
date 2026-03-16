@@ -294,7 +294,7 @@ li {
   font-size: 1.1rem;
   line-height: 1.6;
   padding: 0rem 6rem;
-  margin-bottom: 3vh;
+  margin-bottom: 4vh;
 }
 
 /* Cards */
@@ -311,7 +311,7 @@ li {
   width: 250px;
   padding: 1rem;
   margin: 0.5rem;
-  height: 60vh;
+  height: 41vh;
 }
 
 .card-title {
@@ -348,7 +348,7 @@ li {
   padding: 1rem;
   font-size: 1.2rem;
   width: 100%;
-  height: 40vh;
+  height: 21vh;
 }
 
 .card-link a {
