@@ -299,7 +299,8 @@ li {
 
 /* Cards */
 .card {
-  display: grid;
+  display: inline-block;
+  position: relative;
   grid-template-areas:
     "title"
     "text";
@@ -307,9 +308,10 @@ li {
   border-radius: 12px;
   color: #fff;
   background: rgb(255, 255, 255, 1);
-  width: 300px;
+  width: 250px;
   padding: 1rem;
-  margin: 1rem;
+  margin: 0.5rem;
+  height: 60vh;
 }
 
 .card-title {
@@ -343,7 +345,10 @@ li {
   background: #222;
   border-radius: 10px;
   margin-top: 2vh;
+  padding: 1rem;
+  font-size: 1.2rem;
   width: 100%;
+  height: 40vh;
 }
 
 .card-link a {
