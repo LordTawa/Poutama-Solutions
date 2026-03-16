@@ -307,7 +307,8 @@ li {
   grid-template-columns: 1.6fr 0.2fr;
   border-radius: 12px;
   color: #fff;
-  background: rgb(255, 255, 255, 1);
+  background: rgba(85, 106, 61, 0.9);
+  backdrop-filter: blur(5px);
   width: 250px;
   padding: 1rem;
   margin: 0.5rem;
@@ -323,7 +324,8 @@ li {
   width: 100%;
   margin-left: 0vw;
   font-weight: bold;
-  background: #111;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
 }
 
 .card-image {
@@ -337,12 +339,12 @@ li {
   height: 21.5vw;
   border-radius: 10px;
   display: block;
-  border: 6px solid #007A4D;
 }
 
 .card-text {
   grid-area: text;
-  background: #222;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
   border-radius: 10px;
   margin-top: 2vh;
   padding: 1rem;
@@ -382,7 +384,6 @@ li {
 }
 
 .card-link a:hover {
-  background: #DE3831;
   transform: scale(1.1);
 }
 
