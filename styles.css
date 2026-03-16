@@ -297,6 +297,20 @@ li {
   margin-bottom: 4vh;
 }
 
+/*Why Poutama */
+.whypoutama-section {
+	background: #556a3d;
+}
+.whypoutama-section h4 {
+	text-align: center;
+	color: black;
+}
+
+.whypoutama-section h1 {
+	text-align: center;
+	color: white;
+}
+
 /* Cards */
 .card {
   display: inline-block;
