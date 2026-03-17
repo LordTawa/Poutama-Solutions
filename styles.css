@@ -274,8 +274,14 @@ li {
 
 .image-text-box {
 	position: relative;
-    width: 20%;
+    width: 30%;
+    color: white;
+	background-color: black;
+	border-radius: 30px;
+	padding: 20px;
+	z-index: 5
 }
+
 /* Capability Section */
 .capability-section {
 	padding: 3rem 4rem;
