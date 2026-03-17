@@ -315,6 +315,20 @@ li {
     margin-bottom: 1rem;
 }
 
+.whypoutama-text {
+  background: rgba(0, 0, 0, 0.7);
+  width: 50%;
+  float: right;
+  text-align: right;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+.whypoutama-list {
+  background: rgba(0, 0, 0, 0.7);
+  width: 50%;
+}
+
 /* Cards */
 .card {
   display: inline-block;
