@@ -299,16 +299,20 @@ li {
 
 /*Why Poutama */
 .whypoutama-section {
+	min-height: 110vh;
 	background: #556a3d;
 }
 .whypoutama-section h4 {
 	text-align: center;
+    font-size: 1.5rem;
 	color: black;
 }
 
 .whypoutama-section h1 {
 	text-align: center;
 	color: white;
+    font-size: 3rem;
+    margin-bottom: 1rem;
 }
 
 /* Cards */
