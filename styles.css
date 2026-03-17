@@ -276,10 +276,12 @@ li {
     position: absolute;
     width: 30%;
     color: white;
-	background-color: black;
-	border-radius: 30px;
-	padding: 20px;
-	z-index: 5
+    background-color: black;
+    border-radius: 30px;
+    padding: 20px;
+    z-index: 5;
+    margin-right: -65vw;
+	margin-top: 80vh;
 }
 
 /* Capability Section */
