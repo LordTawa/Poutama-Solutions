@@ -337,16 +337,26 @@ li {
 
 .whypoutama-list ul {
   background: rgba(0, 0, 0, 0.4);
-  width: 60%;
+  width: 80%;
   padding: 1.6rem;
   height: 65vh;
-  margin: 0rem 8vw;
+  margin: 0rem 4vw;
   line-height: 5;
   border-radius: 30px;
   color: white;
   list-style: none;
   text-align: left;
   font-size: 1.1rem;
+}
+
+.whypoutama-list li {
+  float: right;
+  width: 90%;
+   margin: 0vw;
+}
+
+.whypoutama-list ul li {
+  margin-bottom: 1rem;
 }
 
 /* Cards */
