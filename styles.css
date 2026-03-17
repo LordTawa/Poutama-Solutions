@@ -260,17 +260,22 @@ li {
 }
 
 .about-image {
-  flex: 1;
   align-content: right;
   text-align: right;
+  position: absolute;
 }
 
 .about-image img {
   width: 80%;
   border: 6px solid #556a3d;
   border-radius: 30px;
+  align-content: right;
 }
 
+.image-text-box {
+	position: relative;
+    width: 20%;
+}
 /* Capability Section */
 .capability-section {
 	padding: 3rem 4rem;
