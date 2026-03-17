@@ -317,16 +317,27 @@ li {
 
 .whypoutama-text {
   background: rgba(0, 0, 0, 0.7);
-  width: 50%;
+  width: 45%;
   float: right;
   text-align: right;
   flex-wrap: wrap;
   padding: 1rem;
+  height: 70vh;
+  border-radius: 30px;
 }
 
 .whypoutama-list {
-  background: rgba(0, 0, 0, 0.7);
-  width: 50%;
+  background: rgba(0, 0, 0, 0.3);
+  width: 55%;
+  padding: 1rem;
+  height: 70vh;
+}
+
+.whypoutama-list ul {
+  background: rgba(0, 0, 0, 0.3);
+  width: 55%;
+  padding: 1rem;
+  height: 65vh;
 }
 
 /* Cards */
