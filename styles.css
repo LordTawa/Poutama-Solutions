@@ -262,7 +262,7 @@ li {
 .about-image {
   align-content: right;
   text-align: right;
-  position: absolute;
+  position: relative;
 }
 
 .about-image img {
@@ -273,7 +273,7 @@ li {
 }
 
 .image-text-box {
-	position: relative;
+    position: absolute;
     width: 30%;
     color: white;
 	background-color: black;
