@@ -1,8 +1,6 @@
 const fadeSections = document.querySelectorAll(
   '.fade-section, .fade-left, .fade-right, .fade-up, .fade-down, .fade-in'
 );
-document.addEventListener("DOMContentLoaded", () => {
-  const fadeSections = document.querySelectorAll('.fade-section');
 
   const appearOptions = {
     threshold: 0.2,
