@@ -522,15 +522,15 @@ a {
 footer {
   background: #000;
   text-align: center;
-  padding: 2rem 0rem;
+  padding: 1rem 0rem;
   font-size: 0.9rem;
   color: #ccc;
   width: 100%;
-  min-height: 55vh;
+  min-height: 48vh;
 }
 
 .footer-biography {
-	padding: 4vh 3vw;
+	padding: 1vh 1vh 3vw 3vw;
 	float: left;
 	text-align: left;
 	flex-wrap: wrap;
@@ -538,7 +538,7 @@ footer {
 }
 
 .footer-links {
-	padding: 4vh 7vw;
+	padding: 1vh 1vh 3vw 3vw;
 	float: left;
 	text-align: left;
 	flex-wrap: wrap;
@@ -546,7 +546,7 @@ footer {
 }
 
 .footer-contact {
-	padding: 4vh 3vw;
+	padding: 1vh 1vh 3vw 3vw;
 	float: right;
 	text-align: left;
 	flex-wrap: wrap;
@@ -574,7 +574,7 @@ footer {
 }
 
 .footer-final hr {
-	width: 95%;
+	width: 94%;
 	text-align: center;
 	margin: 0 auto;
 	float: center;
@@ -582,7 +582,7 @@ footer {
 }
 
 .footer-final p {
-	padding: 0.4rem 1.8rem;
+	padding: 0.4rem 2rem;
 	color: #888;
 	float: left;
 	text-align: left;
