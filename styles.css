@@ -554,22 +554,29 @@ footer {
 }
 
 .footer-text {
-	padding: 1rem 1rem;
+	padding: 0.4rem;
 	float: left;
 	text-align: left;
 	width: 100%;
 }
 
+.footer-header {
+	padding: 0.4rem;
+	font-size: 1.7rem;
+}
+
 .footer-logo {
-	width: 5vw;
+	width: 4vw;
+	position: absolute
 }
 
 .footer-logo img {
-	width: 5vw;
+	width: 4vw;
 }
 
 .footer-content {
-	width: 20vw;
+	width: 30vw;
+	margin-left: 5vw;
 }
 
 /* Transitions */ 
