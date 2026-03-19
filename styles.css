@@ -394,7 +394,13 @@ li {
   width: 250px;
   padding: 1rem;
   margin: 0.5rem;
-  height: 41vh;
+  height: 41vh
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 25px 40px rgba(0,0,0,0.2);
 }
 
 .card-title {
@@ -529,6 +535,51 @@ footer {
 	text-align: left;
 	width: 100%;
 }
+
+/* Transitions */ 
+.fade-left {
+  opacity: 0;
+  transform: translateX(-60px);
+  transition: all 0.8s ease;
+}
+
+.fade-right {
+  opacity: 0;
+  transform: translateX(60px);
+  transition: all 0.8s ease;
+}
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: all 0.8s ease;
+}
+
+.fade-down {
+  opacity: 0;
+  transform: translateY(-60px);
+  transition: all 0.8s ease;
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+/* Visible state */
+.fade-left.visible,
+.fade-right.visible,
+.fade-up.visible,
+.fade-down.visible,
+.fade-in.visible {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.delay-1 { transition-delay: 0.1s; }
+.delay-2 { transition-delay: 0.2s; }
+.delay-3 { transition-delay: 0.3s; }
+.delay-4 { transition-delay: 0.4s; }
 
 /* Media Queries */
 @media (max-width: 768px) {
