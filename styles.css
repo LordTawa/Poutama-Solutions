@@ -568,6 +568,19 @@ footer {
 	margin-left: 5vw;
 }
 
+.footer-final {
+	float: left;
+	text-align: left;
+	width: 100%;
+}
+
+.footer-final p {
+	padding: 0.4rem 1.2rem;
+	float: left;
+	text-align: left;
+	width: 100%;
+}
+
 .footer-logo {
 	width: 4vw;
 	position: absolute
