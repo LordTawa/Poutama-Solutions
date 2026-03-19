@@ -29,10 +29,6 @@ ul {
   list-style: none;
 }
 
-li {
-	margin-top: 2vh;
-}
-
 a {
 	color: #ccc;
 	text-decoration: none;
@@ -545,7 +541,8 @@ footer {
 	width: 30vw;
 }
 
-.footer-links li a, li {
+.footer-links li a, .footer-links li, .footer-contact li {
+	margin-top: 2vh;
 	color: #999;
 }
 
