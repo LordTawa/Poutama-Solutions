@@ -554,15 +554,18 @@ footer {
 }
 
 .footer-text {
-	padding: 0.4rem;
+	padding: 1.2rem 0.1rem;
 	float: left;
 	text-align: left;
 	width: 100%;
 }
 
 .footer-header {
+	margin-top: 1.1vh;
 	padding: 0.4rem;
-	font-size: 1.7rem;
+	font-size: 1.7vw;
+	width: 30vw;
+	margin-left: 5vw;
 }
 
 .footer-logo {
@@ -574,10 +577,6 @@ footer {
 	width: 4vw;
 }
 
-.footer-content {
-	width: 30vw;
-	margin-left: 5vw;
-}
 
 /* Transitions */ 
 .fade-left {
