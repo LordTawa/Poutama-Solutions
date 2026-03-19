@@ -318,9 +318,15 @@ li {
 
 /*Why Poutama */
 .whypoutama-section {
+	padding: 3rem 4rem;
 	min-height: 110vh;
 	background: #556a3d;
+	display: flex;
+	text-align: center;
+	flex-direction: column;
+	justify-content: center;
 }
+
 .whypoutama-section h4 {
 	text-align: center;
     font-size: 1.5rem;
