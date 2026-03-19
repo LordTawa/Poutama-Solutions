@@ -569,13 +569,21 @@ footer {
 }
 
 .footer-final {
-	float: left;
-	text-align: left;
+	margin-top: 2rem;
 	width: 100%;
 }
 
+.footer-final hr {
+	width: 95%;
+	text-align: center;
+	margin: 0 auto;
+	float: center;
+	color: #444;
+}
+
 .footer-final p {
-	padding: 0.4rem 1.2rem;
+	padding: 0.4rem 1.8rem;
+	color: #888;
 	float: left;
 	text-align: left;
 	width: 100%;
