@@ -1,4 +1,5 @@
-const fadeSections = document.querySelectorAll(
+document.addEventListener("DOMContentLoaded", () => {
+	const fadeSections = document.querySelectorAll(
   '.fade-section, .fade-left, .fade-right, .fade-up, .fade-down, .fade-in'
 );
 
