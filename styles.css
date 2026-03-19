@@ -320,7 +320,10 @@ li {
 .whypoutama-section {
 	padding: 3rem 4rem;
 	min-height: 110vh;
-	background: #556a3d;
+	background-image: url(Background2.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 	display: flex;
 	text-align: center;
 	flex-direction: column;
