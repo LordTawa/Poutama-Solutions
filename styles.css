@@ -226,7 +226,10 @@ li {
 
 /* About Section */
 .about-section {
-  background: #556a3d;
+  background-image: url(Background2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   width: 100%;
   min-height: 110vh;
   display: flex;
