@@ -135,6 +135,11 @@ li {
   text-align: right;
 }
 
+.hero-overlay h3 {
+  color: #556a3d;
+  text-align: right;
+}
+
 .hero-overlay p {
   font-size: 1.3rem;
   margin: 1rem 0;
