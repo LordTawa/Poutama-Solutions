@@ -304,7 +304,7 @@ a {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background: #000000;
+	background: #111;
 	color: #FFFFFF;
 }
 
@@ -516,7 +516,7 @@ a {
 
 /* Footer */
 footer {
-  background: #000;
+  background: #111;
   text-align: center;
   padding: 1rem 0rem;
   font-size: 0.9rem;
