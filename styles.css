@@ -545,6 +545,10 @@ footer {
 	width: 30vw;
 }
 
+.footer-links li a, li {
+	color: #999;
+}
+
 .footer-contact {
 	padding: 1vh 1vh 3vw 3vw;
 	float: right;
@@ -554,10 +558,11 @@ footer {
 }
 
 .footer-text {
-	padding: 1.2rem 0.1rem;
+	padding: 1.3rem 0.1rem;
 	float: left;
 	text-align: left;
 	width: 100%;
+	color: #999;
 }
 
 .footer-header {
