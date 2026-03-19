@@ -287,7 +287,7 @@ a {
     position: absolute;
     width: 30%;
     color: white;
-    background-color: black;
+    background-color: #111;
     border-radius: 30px;
     padding: 20px;
     z-index: 5;
