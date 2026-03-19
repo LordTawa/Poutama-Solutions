@@ -560,6 +560,18 @@ footer {
 	width: 100%;
 }
 
+.footer-logo {
+	width: 5vw;
+}
+
+.footer-logo img {
+	width: 5vw;
+}
+
+.footer-content {
+	width: 20vw;
+}
+
 /* Transitions */ 
 .fade-left {
   opacity: 0;
