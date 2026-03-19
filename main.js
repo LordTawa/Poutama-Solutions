@@ -1,10 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
-	const fadeSections = document.querySelectorAll(
+  const fadeSections = document.querySelectorAll(
   '.fade-section, .fade-left, .fade-right, .fade-up, .fade-down, .fade-in'
 );
 
   const appearOptions = {
-    threshold: 0.2,
+    threshold: 0.1,
+    rootMargin: "0px 0px -50px 0px"
   };
 
   const appearOnScroll = new IntersectionObserver(function(entries, observer) {
