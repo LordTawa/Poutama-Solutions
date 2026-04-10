@@ -974,3 +974,224 @@ section {
   transform: translateY(0);
   animation: fadeInTop 1s ease-out;
 }
+
+
+/* Website Responsiveness */
+
+.capability-section > div {
+  width: 100%;
+}
+
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+
+.capability-section .card {
+  width: calc(50% - 2rem);
+  min-width: 220px;
+  box-sizing: border-box;
+  height: auto;          
+  min-height: 250px;
+}
+
+.capability-section .card .card-title {
+  font-size: clamp(1.1rem, 2.5vw, 1.6rem); 
+}
+
+.capability-section .card .card-text {
+  height: auto;          
+}
+
+
+/* HERO */
+
+@media (max-width: 700px) {
+  .hero-overlay {
+    width: 100%;
+    padding: 4rem 1.5rem 3rem 1.5rem;
+    text-align: center;
+  }
+  .hero-overlay h1,
+  .hero-overlay h3,
+  .hero-overlay p {
+    text-align: center;
+  }
+  .cta, .cta2 {
+    float: none;
+    display: block;
+    width: fit-content;
+    margin: 0.6rem auto;
+  }
+  .gradient-overlay {
+    background: linear-gradient(
+      to bottom,
+      rgba(255,255,255,0.95),
+      rgba(255,255,255,0.85),
+      rgba(255,255,255,0.6),
+      rgba(0,0,0,0)
+    ), url('images/Marae.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+
+/* ABOUT SECTION */
+
+@media (max-width: 800px) {
+  .about-section {
+    flex-direction: column;
+    padding: 4rem 1.5rem;
+    min-height: unset;
+  }
+  .about-section-text {
+    flex: unset;
+    width: 100%;
+  }
+  .about-image {
+    display: none;
+  }
+  .image-text-box {
+    position: static; 
+    width: 100%;
+    margin: 1.5rem 0 0 0;
+  }
+}
+
+
+/* CAPABILITY SECTION */
+
+@media (max-width: 700px) {
+  .capability-section {
+    padding: 3rem 1.2rem;
+  }
+  .capability-section .card {
+    width: 100%;       
+    min-height: unset;
+  }
+  .capability-section-text {
+    padding: 0;           
+  }
+}
+
+
+/* WHY POUTAMA */
+
+.whypoutama-section > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.whypoutama-section > div > .fade-down {
+  width: 100%;
+  text-align: center;
+}
+
+.whypoutama-text {
+  float: none;             
+  flex: 1 1 40%;
+  height: auto;         
+  min-width: 260px;
+  line-height: 1.8;     
+}
+
+.whypoutama-list {
+  flex: 1 1 45%;
+  min-width: 260px;
+}
+
+.whypoutama-list ul {
+  height: auto;           
+  line-height: 2;     
+}
+
+.whypoutama-list li {
+  float: none;          
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+@media (max-width: 700px) {
+  .whypoutama-section {
+    padding: 3rem 1.2rem;
+  }
+  .whypoutama-text,
+  .whypoutama-list {
+    flex: 1 1 100%;
+  }
+}
+
+
+/* FOOTER */
+
+footer > div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-biography,
+.footer-links,
+.footer-contact {
+  float: none;        
+}
+
+@media (max-width: 800px) {
+  .footer-biography {
+    width: 100%;
+  }
+  .footer-links,
+  .footer-contact {
+    width: 50%;
+  }
+  .footer-header {
+    font-size: 1.2rem;
+    width: 100%;
+    margin-left: 5vw;
+  }
+  .footer-logo {
+    width: 12vw;
+  }
+  .footer-logo img {
+    width: 12vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-biography,
+  .footer-links,
+  .footer-contact {
+    width: 100%;
+    padding: 1rem 1.5rem;
+  }
+  .footer-header {
+    font-size: 1.1rem;
+    margin-left: 0;
+  }
+  .footer-logo {
+    position: static;
+    width: 14vw;
+  }
+  .footer-logo img {
+    width: 14vw;
+  }
+}
+
+@media (max-width: 700px) {
+  .cta-section {
+    padding: 5rem 1.5rem;
+    min-height: unset;
+  }
+  .cta-section-header {
+    font-size: 2rem;
+  }
+}
