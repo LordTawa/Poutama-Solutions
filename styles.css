@@ -996,7 +996,7 @@ section {
   min-width: 220px;
   box-sizing: border-box;
   height: auto;          
-  min-height: 200px;
+  min-height: 100px;
 }
 
 .capability-section .card .card-title {
