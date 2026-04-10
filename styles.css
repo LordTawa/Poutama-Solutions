@@ -13,6 +13,7 @@ html, body {
   font-family: 'Cabin', sans-serif;
   color: black;
   background: whitesmoke;
+  overscroll-behavior-y: none;
 }
 
 h1 {
@@ -150,7 +151,7 @@ a {
 }
 
 .gradient-overlay { 
-  background: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.9),rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('Marae.jpg');
+  background: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.9),rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('images/Marae.jpg');
   background-size: cover; 
   background-position: center;
   height: 100vh;
@@ -234,7 +235,7 @@ a {
 
 /* About Section */
 .about-section {
-  background-image: url(Background2.jpg);
+  background-image: url(images/Background2.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -331,7 +332,7 @@ a {
 .whypoutama-section {
 	padding: 3rem 4rem;
 	min-height: 110vh;
-	background-image: url(Background2.jpg);
+	background-image: url(images/Background2.jpg);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
