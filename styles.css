@@ -14,6 +14,7 @@ html, body {
   color: black;
   background: whitesmoke;
   overscroll-behavior-y: none;
+  overscroll-behavior-x: none;
 }
 
 h1 {
