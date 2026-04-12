@@ -8,6 +8,10 @@
   scroll-behavior: smooth;
 }
 
+section {
+  overflow-x: hidden;
+}
+
 body {
   overflow-x: hidden;
 }
@@ -19,6 +23,8 @@ html, body {
   background: whitesmoke;
   overscroll-behavior-y: none;
   overscroll-behavior-x: none;
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 h1 {
