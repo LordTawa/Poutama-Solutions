@@ -192,7 +192,8 @@ a {
   background: rgb(255, 255, 255, 0.8);
   color: rgb(100, 100, 100);
 }
-.ct:hover .arrow { 
+
+.cta:hover .arrow { 
 	transform: translateX(4px); 
 }
 
