@@ -416,7 +416,7 @@ a {
 	background: #DDDDDD;
 	text-align: center;
 	min-height: 70vh;
-	padding: 15vh;
+	padding: 15vh 10vh;
 }
 
 .cta-section-header {
