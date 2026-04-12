@@ -192,27 +192,7 @@ a {
   border: 1px solid white;
 }
 
-.cta3 {
-  display: inline-block;
-  font-size: 3vh;
-  background: rgb(85, 106, 61, 0.8);
-  border: 1px solid white;
-  color: white;
-  padding: 0.8rem 3.6rem;
-  margin-top: 2rem;
-  border-radius: 30px;
-  text-decoration: none;
-  text-align: center;
-  transition: background 0.3s ease;
-}
-
-.cta3:hover {
-  background: rgb(137, 174, 113, 0.7);
-  border: 1px solid rgb(100, 100, 100);
-  color: rgb(100, 100, 100);
-}
-
-.cta:hover .arrow { 
+.ct:hover .arrow { 
 	transform: translateX(4px); 
 }
 
@@ -447,6 +427,7 @@ a {
 
 .cta-section p {
 	font-size: 1.2rem;
+	margin-bottom: 2vh;
 }
 
 /* Footer */
