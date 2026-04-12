@@ -161,7 +161,7 @@ a {
   display: inline-block;
   font-size: 3vh;
   padding: 0.8rem 3.6rem;
-  border-radius: 30px;
+  border-radius: 15px;
   text-decoration: none;
   text-align: center;
   transition: background 0.3s ease;
@@ -169,20 +169,17 @@ a {
 
 .cta {
   background: rgb(85, 106, 61, 0.8);
-  border: 1px solid white;
   color: white;
   margin-top: 1rem;
 }
 
 .cta:hover {
   background: rgb(137, 174, 113, 0.7);
-  border: 1px solid rgb(100, 100, 100);
   color: rgb(100, 100, 100);
 }
 
 .cta2 {
   background: rgb(255, 255, 255, 0.8);
-  border: 1px solid rgb(100, 100, 100);
   color: rgb(100, 100, 100);
   margin-top: 1rem;
 }
@@ -190,7 +187,6 @@ a {
 .cta2:hover {
   background: rgb(100, 100, 100, 0.3);
   color: rgb(255, 255, 255, 1);
-  border: 1px solid white;
 }
 
 .ct:hover .arrow { 
