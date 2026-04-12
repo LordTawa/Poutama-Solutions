@@ -17,20 +17,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }, appearOptions);
   fadeSections.forEach(section => appearOnScroll.observe(section));
 
-  // Nav highlighter
-  const sections = document.querySelectorAll('section[id]');
-  const navLinks = document.querySelectorAll('.site-nav__desktop a');
-  const navObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        navLinks.forEach(link => link.classList.remove('nav-active'));
-        const activeLink = document.querySelector(`.site-nav__desktop a[href="#${entry.target.id}"]`);
-        if (activeLink) activeLink.classList.add('nav-active');
-      }
-    });
-  }, { threshold: 0.4 });
-  sections.forEach(section => navObserver.observe(section));
-
   // Hamburger menu
   const header = document.querySelector(".header");
   const hamburger = document.querySelector(".hamburger");
@@ -54,5 +40,25 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   }
+  
+  // Nav highlighter
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('.site-nav__desktop a');
 
+  let lastActive = null;
+
+  const navObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      const activeLink = document.querySelector(`.site-nav__desktop a[href="#${entry.target.id}"]`);
+      if (entry.isIntersecting) {
+        if (lastActive) lastActive.classList.remove('nav-active');
+        if (activeLink) {
+          activeLink.classList.add('nav-active');
+          lastActive = activeLink; // 👈 update the last known active
+        }
+      }
+    });
+  }, { threshold: 0.4 });
+
+  sections.forEach(section => navObserver.observe(section));
 });
