@@ -851,12 +851,12 @@ section {
   .site-nav__desktop {
     display: none;
     flex-direction: column;
-    background: rgba(0, 0, 0, 0.95);
+    background:rgb(5, 2, 5, 0.9);
     position: absolute;
     top: 100%;
     right: 0;
-    padding: 1rem;
-    border-radius: 0 0 0 12px;
+    padding: 4vw;
+    border-radius: 0 0 0 30px;
     width: 200px;
   }
 
