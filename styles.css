@@ -18,7 +18,7 @@ html, body {
 }
 
 h1 {
-  font-weight: 500;
+  font-weight: 300;
 }
 
 hr {
@@ -126,14 +126,15 @@ a {
   margin-bottom: 4vh;
 }
 
-.hero-overlay h3 {
+.hero-overlay-label {
+  font-size: 1rem;
   color: #556a3d;
   text-align: right;
   margin-bottom: 1vh;
 }
 
-.hero-overlay p {
-  font-size: 1.3rem;
+.hero-overlay-description {
+  font-size: 1.6rem;
   margin: 1rem 0.1rem;
   text-align: right;
 }
