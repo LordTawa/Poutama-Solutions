@@ -553,13 +553,15 @@ footer {
 }
 
 /* Visible state */
+.fade-section.visible,
 .fade-left.visible,
 .fade-right.visible,
 .fade-up.visible,
 .fade-down.visible,
 .fade-in.visible {
-  opacity: 1;
-  transform: translate(0, 0);
+  opacity: 1 !important;
+  transform: none !important;
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
 .delay-1 { transition-delay: 0.1s; }
