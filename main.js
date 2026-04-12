@@ -20,7 +20,24 @@ document.addEventListener("DOMContentLoaded", () => {
     appearOnScroll.observe(section);
   });
 });
-	
+
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('.site-nav__desktop a');
+
+const navObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      navLinks.forEach(link => link.classList.remove('nav-active'));
+      const activeLink = document.querySelector(`.site-nav__desktop a[href="#${entry.target.id}"]`);
+      if (activeLink) activeLink.classList.add('nav-active');
+    }
+  });
+}, {
+  threshold: 0.4
+});
+
+sections.forEach(section => navObserver.observe(section));
+
 document.addEventListener("DOMContentLoaded", () => {
   const header = document.querySelector(".header");
   const hero = document.querySelector(".hero");
