@@ -860,6 +860,7 @@ section {
   }
 
   .site-nav__desktop {
+	gap: 0;
     display: none;
     flex-direction: column;
     background:rgb(5, 2, 5, 0.9);
@@ -880,7 +881,11 @@ section {
     transition: 0.3s ease;
 	width: 100%;
   }	
-
+	
+  .site-nav__desktop li {
+    padding: 0.7rem;
+  }	
+	
   .site-nav__desktop a:hover {
 	transform: scale(1.05);
 	color: #bbb;
