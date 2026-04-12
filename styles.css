@@ -859,7 +859,17 @@ section {
     border-radius: 0 0 0 30px;
     width: 200px;
   }
+	
+  .site-nav__desktop a {
+    color: #888;
+    transition: 0.3s ease;
+  }	
 
+  .site-nav__desktop a:hover {
+	transform: scale(1.05);
+	color: #bbb;
+  }	
+	
   .site-nav__desktop.active {
     display: flex;
   }
