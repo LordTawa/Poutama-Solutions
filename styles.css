@@ -210,6 +210,14 @@ a {
   color: rgb(100, 100, 100);
 }
 
+.cta:hover .arrow { 
+	transform: translateX(4px); 
+}
+
+.arrow { 
+	transition: transform 0.3s ease; 
+}
+
 /* About Section */
 .about-section {
   background-image: url(images/Background2.jpg);
