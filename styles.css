@@ -148,19 +148,29 @@ a {
 }
 
 /* Call to Action */
-.cta {
-  display: inline-block;
-  float: right;
-  font-size: 3vh;
-  background: rgb(85, 106, 61, 0.8);
-  border: 1px solid white;
-  color: white;
-  padding: 0.8rem 3.6rem;
+.hero-cta-group {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 0.8rem;
+  flex-wrap: wrap;
   margin-top: 1rem;
+}
+
+.cta, .cta2 {
+  display: inline-block;
+  font-size: 3vh;
+  padding: 0.8rem 3.6rem;
   border-radius: 30px;
   text-decoration: none;
   text-align: center;
   transition: background 0.3s ease;
+}
+
+.cta {
+  background: rgb(85, 106, 61, 0.8);
+  border: 1px solid white;
+  color: white;
+  margin-top: 1rem;
 }
 
 .cta:hover {
@@ -170,19 +180,10 @@ a {
 }
 
 .cta2 {
-  display: inline-block;
-  float: right;
-  font-size: 3vh;
   background: rgb(255, 255, 255, 0.8);
   border: 1px solid rgb(100, 100, 100);
   color: rgb(100, 100, 100);
-  padding: 0.8rem 3.6rem;
   margin-top: 1rem;
-  margin-right: 2vh;
-  border-radius: 30px;
-  text-decoration: none;
-  text-align: center;
-  transition: background 0.3s ease;
 }
 
 .cta2:hover {
