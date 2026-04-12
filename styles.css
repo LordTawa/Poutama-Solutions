@@ -230,7 +230,7 @@ a {
   padding: 1rem 1rem;
 }
 
-.about-section h4 {
+.about-section-label {
   color: #000000;
   font-size: 1.5rem;
 }
@@ -241,7 +241,7 @@ a {
   margin-bottom: 1rem;
 }
 
-.about-section p {
+.about-section-description {
   color: #FFFFFF;
   font-size: 1.1rem;
   line-height: 1.6;
@@ -286,7 +286,7 @@ a {
 	color: #FFFFFF;
 }
 
-.capability-section h4 {
+.capability-section-label {
   color: #556a3d;
   font-size: 1.5rem;
 }
@@ -321,7 +321,7 @@ a {
 	font-size: 1.1rem;
 }
 
-.whypoutama-section h4 {
+.whypoutama-label {
 	text-align: center;
     font-size: 1.5rem;
 	color: black;
