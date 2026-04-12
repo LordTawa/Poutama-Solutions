@@ -76,6 +76,11 @@ a {
   margin-right: 0vw;
 }
 
+.nav-active {
+  color: #556a3d !important;
+  font-weight: 600;
+}
+
 @media (max-width: 800px) {
   .nav-links {
     margin-right: 0vw;
