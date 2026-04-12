@@ -183,16 +183,15 @@ a {
 }
 
 .cta2 {
-  background: rgb(255, 255, 255, 0.8);
-  color: rgb(100, 100, 100);
+  background: rgb(100, 100, 100, 0.6);
+  color: rgb(255, 255, 255, 1);
   margin-top: 1rem;
 }
 
 .cta2:hover {
-  background: rgb(100, 100, 100, 0.3);
-  color: rgb(255, 255, 255, 1);
+  background: rgb(255, 255, 255, 0.8);
+  color: rgb(100, 100, 100);
 }
-
 .ct:hover .arrow { 
 	transform: translateX(4px); 
 }
