@@ -872,18 +872,25 @@ section {
     padding-bottom: 4vw;
     border-radius: 0 0 0 30px;
     width: 200px;
-	z-index: 10000;
+	z-index: 100;
 	transition: opacity 0.3s ease, transform 0.3s ease;
   }
 	
   .site-nav__desktop a {
-    color: #888;
     transition: 0.3s ease;
-	width: 100%;
+	width: 200px;
   }	
 	
   .site-nav__desktop li {
-    padding: 0.7rem;
+    padding-top: 0.7rem;
+	padding-bottom: 0.7rem;
+	width: 200px;
+	text-align: center;
+  }	
+	
+  .site-nav__desktop li:hover {
+    background: #999;
+	transition: 0.3s cubic-bezier(0, -0.4, 1, 0.66);
   }	
 	
   .site-nav__desktop a:hover {
