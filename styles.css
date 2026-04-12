@@ -122,12 +122,14 @@ a {
 
 .hero-overlay h1 {
   font-size: clamp(2.5rem, 6vw, 4.5rem);
+  letter-spacing: 1px;
   color: #000000;
   text-align: right;
   margin-bottom: 4vh;
 }
 
 .hero-overlay-label {
+  letter-spacing: 1px;
   font-size: 1rem;
   color: #556a3d;
   text-align: right;
@@ -135,8 +137,9 @@ a {
 }
 
 .hero-overlay-description {
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   margin: 1rem 0.1rem;
+  letter-spacing: 1px;
   text-align: right;
 }
 
