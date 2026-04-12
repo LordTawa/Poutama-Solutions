@@ -43,19 +43,6 @@ a {
 }
 	
 /* Navbar Styles */
-.navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: #000;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.7rem 1rem;
-  z-index: 3000;
-}
-
 .nav1 { 
   color: #556a3d; 
   text-decoration: none;
@@ -221,17 +208,6 @@ a {
   background: rgb(137, 174, 113, 0.7);
   border: 1px solid rgb(100, 100, 100);
   color: rgb(100, 100, 100);
-}
-
-/* Image Section */
-.fancy-image-section {
-  height: 100vh;
-  width: 100%;
-  margin: 0;
-  background-image: url(buidling.jpeg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 /* About Section */
@@ -403,10 +379,6 @@ a {
 .card {
   display: inline-block;
   position: relative;
-  grid-template-areas:
-    "title"
-    "text";
-  grid-template-columns: 1.6fr 0.2fr;
   border-radius: 12px;
   color: #fff;
   background: rgba(85, 106, 61, 0.9);
@@ -436,19 +408,6 @@ a {
   backdrop-filter: blur(5px);
 }
 
-.card-image {
-  grid-area: image;
-  width: 100%;
-  height: auto;
-}
-
-.card-image img {
-  width: 21.5vw;
-  height: 21.5vw;
-  border-radius: 10px;
-  display: block;
-}
-
 .card-text {
   grid-area: text;
   background: rgba(0, 0, 0, 0.5);
@@ -459,40 +418,6 @@ a {
   font-size: 1.2rem;
   width: 100%;
   height: 21vh;
-}
-
-.card-link a {
-  display: inline-flex;     
-  justify-content: center;  
-  align-items: center;       
-  padding: 2vw 20vw;     
-  background: #FFFFFF;       
-  color: #000;              
-  border-radius: 8px;           
-  font-weight: 700;
-  text-decoration: none;     
-  min-width: 150px;      
-  text-align: center;
-  transition: background 0.3s;
-}
-
-.card-link {
-  z-index: 20000;
-  grid-area: link;
-  padding: 1rem;
-  border-radius: 10px;
-  text-align: center;
-  display: inline-block;
-  color: #fff;
-  padding: 0.8rem 1.5rem;
-  margin-top: 1rem;
-  border-radius: 8px;
-  text-decoration: none;
-  transition: background 0.3s ease;
-}
-
-.card-link a:hover {
-  transform: scale(1.1);
 }
 
 /* CTA Section */
