@@ -136,7 +136,6 @@ a {
   letter-spacing: 1px;
   color: #000000;
   text-align: right;
-  margin-bottom: 4vh;
 }
 
 .hero-overlay-label {
@@ -893,7 +892,7 @@ section {
 		padding: 10vh;
 	}
 	.hero h1 {
-		font-size: 3em;
+		font-size: 15vw;
 	}
 }
 
