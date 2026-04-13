@@ -1119,11 +1119,8 @@ footer > div {
     width: 50%;
   }
 	
-  .footer-logo {
-    width: 12vw;
-  }
   .footer-logo img {
-    width: 12vw;
+    width: 5vw;
   }
 }
 
