@@ -591,6 +591,9 @@ footer > div {
   .divider, .about-divider {
     display: none;
   }
+  .footer-logo {
+	font-size: 1.2rem;
+  }
 }
 
 @media (max-width: 600px) {
