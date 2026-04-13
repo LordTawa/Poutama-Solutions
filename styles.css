@@ -452,11 +452,21 @@ footer {
 }
 
 .footer-biography {
-	padding: 3vh 1vh 3vw 3vw;
-	float: left;
-	text-align: left;
-	flex-wrap: wrap;
-	width: 40vw;
+  padding: 3vh 1vh 3vw 3vw;
+  text-align: left;
+  flex-wrap: wrap;
+  width: 40vw;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-logo img {
+  width: 4vw;
+  height: auto;
 }
 
 .footer-links {
@@ -515,15 +525,6 @@ footer {
 	float: left;
 	text-align: left;
 	width: 100%;
-}
-
-.footer-logo {
-	width: 4vw;
-	position: absolute
-}
-
-.footer-logo img {
-	width: 4vw;
 }
 
 footer > div {
