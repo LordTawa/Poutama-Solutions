@@ -8,6 +8,10 @@
   scroll-behavior: smooth;
 }
 
+section {
+  overflow-x: hidden;
+}
+
 body {
   overflow-x: hidden;
 }
@@ -19,6 +23,8 @@ html, body {
   background: whitesmoke;
   overscroll-behavior-y: none;
   overscroll-behavior-x: none;
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 h1 {
@@ -130,7 +136,6 @@ a {
   letter-spacing: 1px;
   color: #000000;
   text-align: right;
-  margin-bottom: 4vh;
 }
 
 .hero-overlay-label {
@@ -553,13 +558,15 @@ footer {
 }
 
 /* Visible state */
+.fade-section.visible,
 .fade-left.visible,
 .fade-right.visible,
 .fade-up.visible,
 .fade-down.visible,
 .fade-in.visible {
-  opacity: 1;
-  transform: translate(0, 0);
+  opacity: 1 !important;
+  transform: none !important;
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
 .delay-1 { transition-delay: 0.1s; }
@@ -795,6 +802,7 @@ section {
   opacity: 0;
 }
 
+
 @media (max-width: 700px) {
   .hero-cta-group {
     flex-direction: column;
@@ -852,22 +860,39 @@ section {
   }
 
   .site-nav__desktop {
+	gap: 0;
     display: none;
     flex-direction: column;
     background:rgb(5, 2, 5, 0.9);
     position: absolute;
     top: 100%;
     right: 0;
-    padding: 4vw;
+	padding: 0px;
+	padding-top: 4vw;
+    padding-bottom: 4vw;
     border-radius: 0 0 0 30px;
     width: 200px;
+	z-index: 100;
+	transition: opacity 0.3s ease, transform 0.3s ease;
   }
 	
   .site-nav__desktop a {
-    color: #888;
     transition: 0.3s ease;
+	width: 200px;
   }	
-
+	
+  .site-nav__desktop li {
+    padding-top: 0.7rem;
+	padding-bottom: 0.7rem;
+	width: 200px;
+	text-align: center;
+  }	
+	
+  .site-nav__desktop li:hover {
+    background: #999;
+	transition: 0.3s cubic-bezier(0, -0.4, 1, 0.66);
+  }	
+	
   .site-nav__desktop a:hover {
 	transform: scale(1.05);
 	color: #bbb;
@@ -885,7 +910,7 @@ section {
 		padding: 10vh;
 	}
 	.hero h1 {
-		font-size: 3em;
+		font-size: 15vw;
 	}
 }
 
