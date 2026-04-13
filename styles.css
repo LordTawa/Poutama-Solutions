@@ -526,6 +526,26 @@ footer {
 	width: 4vw;
 }
 
+footer > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+  align-items: flex-start;
+}
+
+.footer-biography,
+.footer-links,
+.footer-contact {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-final {
+  flex-basis: 100%;
+  text-align: center;
+}
+
 
 /* Transitions */ 
 .fade-left {
