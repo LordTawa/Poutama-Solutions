@@ -1179,3 +1179,9 @@ footer > div {
     font-size: 2rem;
   }
 }
+
+@media (max-width: 600px) {
+  footer > div {
+    flex-direction: column;
+  }
+}
