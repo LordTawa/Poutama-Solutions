@@ -975,7 +975,6 @@ section {
 
 
 .capability-section .card {
-  width: calc(50% - 2rem);
   min-width: 220px;
   box-sizing: border-box;
   height: auto;          
