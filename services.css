@@ -100,8 +100,8 @@ ul {
   transform: scale(1.2);
 }
 
-.this-one {
-  color: #556a3d !important;
+.this-one a {
+  color: #556a3d;
   font-weight: 600;
   border-bottom: 2px solid #556a3d;
   text-decoration: none;
