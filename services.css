@@ -46,6 +46,14 @@ a {
 	text-decoration: none;
 }
 
+.scale-transform {
+	transition: transform 0.3s ease;
+}
+
+.scale-transform:hover {
+	transform: scale(1.05);
+}
+
 .shadow-xl {
     --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / .1), 0 8px 10px -6px rgb(0 0 0 / .1);
     --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
@@ -64,9 +72,6 @@ a {
   text-decoration: none;
   font-size: 1rem;
   transition: transform 0.3s ease;
-}
-.nav:hover {
-  transform: scale(1.05);
 }
 
 .logo-text img {
@@ -376,18 +381,32 @@ a {
 }
 
 /* Cards */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  width: 100%;
+  max-width: 1000px;
+  align-content: center;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
 .card {
-  display: inline-block;
-  position: relative;
   border-radius: 12px;
   color: #fff;
   background: rgba(85, 106, 61, 0.9);
   backdrop-filter: blur(5px);
-  width: 250px;
-  padding: 1rem;
-  margin: 0.5rem;
-  height: 41vh;
+  padding: 1.5rem;
+  width: 100%;       
+  height: auto;        
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+@media (max-width: 800px) {
+  .card-container {
+    grid-template-columns: 1fr;
+  }
 }
 
 .card:hover {
@@ -960,7 +979,6 @@ section {
 
 
 .capability-section .card {
-  width: calc(50% - 2rem);
   min-width: 220px;
   box-sizing: border-box;
   height: auto;          
