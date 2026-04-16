@@ -13,8 +13,9 @@ document.addEventListener("DOMContentLoaded", () => {
     entries.forEach(entry => {
       if (!entry.isIntersecting) return;
       entry.target.classList.add('visible');
-      entry.target.style.opacity = '1';
-      entry.target.style.transform = 'none';
+      // Removed: entry.target.style.opacity and entry.target.style.transform
+      // These inline styles override CSS transforms (scale, rotate, etc.)
+      // Let the 'visible' class in CSS handle all animation end-states instead.
       observer.unobserve(entry.target);
     });
   }, appearOptions);
@@ -58,7 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (lastActive) lastActive.classList.remove('nav-active');
         if (activeLink) {
           activeLink.classList.add('nav-active');
-          lastActive = activeLink; // 👈 update the last known active
+          lastActive = activeLink;
         }
       }
     });
