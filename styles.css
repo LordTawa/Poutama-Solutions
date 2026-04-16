@@ -386,6 +386,9 @@ a {
   gap: 2rem;
   width: 100%;
   max-width: 1000px;
+  align-content: center;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
 .card {
