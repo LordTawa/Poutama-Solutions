@@ -13,9 +13,6 @@ document.addEventListener("DOMContentLoaded", () => {
     entries.forEach(entry => {
       if (!entry.isIntersecting) return;
       entry.target.classList.add('visible');
-      // Removed: entry.target.style.opacity and entry.target.style.transform
-      // These inline styles override CSS transforms (scale, rotate, etc.)
-      // Let the 'visible' class in CSS handle all animation end-states instead.
       observer.unobserve(entry.target);
     });
   }, appearOptions);
