@@ -271,7 +271,7 @@ footer > div {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
-  padding: 2rem;
+  padding: 1rem 0rem;
   align-items: flex-start;
 }
 
