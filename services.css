@@ -142,14 +142,9 @@ ul {
 .advice {
 	display: flex;
 	flex: 1;
-	flex-direction: row;
 	padding: 1em;
 	background-color: #666;
 	border-radius: 30px;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: flex-start;
-	align-content: flex-start;
 }
 
 .advice-image {
@@ -157,7 +152,7 @@ ul {
 	max-width: 40vw;
 	height: 40vh;
 	border-radius: 30px;
-	z-index: 200;
+	flex-shrink: 0;
 }
 
 .advice-text {
