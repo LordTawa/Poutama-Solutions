@@ -141,11 +141,15 @@ ul {
 /* Strategetic Advice */
 .advice {
 	display: flex;
+	flex: 1;
 	flex-direction: row;
-	justify-content: space-between;
 	padding: 1em;
 	background-color: #666;
-	border-radius: 30px
+	border-radius: 30px;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+	align-content: flex-start;
 }
 
 .advice-image {
@@ -162,7 +166,6 @@ ul {
 
 /* Feasability Assessments */
 .assessments {
-	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	padding: 1em;
@@ -179,7 +182,6 @@ ul {
 
 /* Compliance Oversight */
 .oversight {
-	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	padding: 1em;
@@ -196,7 +198,6 @@ ul {
 
 /* Project Management */
 .management {	
-	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	padding: 1em;
