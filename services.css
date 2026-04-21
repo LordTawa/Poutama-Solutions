@@ -139,14 +139,37 @@ ul {
 }
 
 /* Strategetic Advice */
+.advice {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 1em;
+	background-color: #666;
+	border-radius: 30px
+}
+
 .advice-image {
 	background-color: #556a3d;
 	max-width: 40vw;
 	height: 40vh;
 	border-radius: 30px;
+	z-index: 200;
+}
+
+.advice-text {
+	width: 40vw;
 }
 
 /* Feasability Assessments */
+.assessments {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 1em;
+	background-color: #666;
+	border-radius: 30px
+}
+
 .assessment-image {
 	background-color: #556a3d;
 	max-width: 40vw;
@@ -155,6 +178,15 @@ ul {
 }
 
 /* Compliance Oversight */
+.oversight {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 1em;
+	background-color: #666;
+	border-radius: 30px
+}
+
 .oversight-image {
 	background-color: #556a3d;
 	max-width: 40vw;
@@ -163,6 +195,15 @@ ul {
 }
 
 /* Project Management */
+.management {	
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 1em;
+	background-color: #666;
+	border-radius: 30px
+}
+
 .management-image {
 	background-color: #556a3d;
 	max-width: 40vw;
