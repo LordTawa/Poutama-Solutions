@@ -17,212 +17,477 @@
 	<link rel="stylesheet" href="contact.css">
 	<script type="application/ld+json">
 	{
-  		"@context": "https://schema.org",
-  		"@type": "LocalBusiness",
- 		"name": "Poutama Solutions",
- 		"description": "Māori-led consultancy helping iwi, hapū and communities deliver sustainable infrastructure across Aotearoa.",
- 		"url": "https://www.poutamasolutions.co.nz",
-  		"telephone": "+6427578647",
-  		"email": "poutamasolutions@gmail.com",
-  		"address": {
-    		"@type": "PostalAddress",
-    		"streetAddress": "1255 Omahu Rd",
-    		"addressLocality": "Hastings",
-    		"postalCode": "4175",
-    		"addressCountry": "NZ"
-  		}
+		"@context": "https://schema.org",
+		"@type": "LocalBusiness",
+		"name": "Poutama Solutions",
+		"description": "Māori-led consultancy helping iwi, hapū and communities deliver sustainable infrastructure across Aotearoa.",
+		"url": "https://www.poutamasolutions.co.nz",
+		"telephone": "+6427578647",
+		"email": "poutamasolutions@gmail.com",
+		"address": {
+			"@type": "PostalAddress",
+			"streetAddress": "1255 Omahu Rd",
+			"addressLocality": "Hastings",
+			"postalCode": "4175",
+			"addressCountry": "NZ"
+		}
 	}
-</script>
+	</script>
 	<!--  ___ _____ _ ____    _____  ___        ___      _____ ___ __  __ _____  -->
 	<!-- |_ _|_   _( ) ___|  |_   _|/ \ \      / / \    |_   _|_ _|  \/  | ____| -->
 	<!--  | |  | | |/\___ \    | | / _ \ \ /\ / / _ \     | |  | || |\/| |  _|   -->
 	<!--  | |  | |    ___) |   | |/ ___ \ V  V / ___ \    | |  | || |  | | |___  -->
 	<!-- |___| |_|   |____/    |_/_/   \_\_/\_/_/   \_\   |_| |___|_|  |_|_____| -->
+	<style>
+		/* ── Contact-page-only styles ── */
+
+		.contact-hero {
+			background-image: url('images/Dark-Background.jpg');
+			background-position: center;
+			background-size: cover;
+			width: 100%;
+			padding: 10rem 4rem 5rem 4rem;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+		.contact-hero-label {
+			font-size: 1.4em;
+			color: #556a3d;
+			margin-bottom: 0.5rem;
+		}
+		.contact-hero h1 {
+			font-size: clamp(2.5rem, 5vw, 4rem);
+			color: white;
+			font-weight: 300;
+			margin-bottom: 1rem;
+		}
+		.contact-hero p {
+			font-size: 1.1rem;
+			color: #ccc;
+			max-width: 520px;
+		}
+
+		/* Contact body */
+		.contact-body {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 3rem;
+			padding: 5rem 4rem;
+			background: whitesmoke;
+			align-items: flex-start;
+		}
+
+		/* Info panel */
+		.contact-info {
+			flex: 1 1 280px;
+			max-width: 380px;
+		}
+		.contact-info h2 {
+			font-size: 1.8rem;
+			font-weight: 300;
+			color: #111;
+			margin-bottom: 0.5rem;
+		}
+		.contact-info > p {
+			color: #555;
+			line-height: 1.7;
+			margin-bottom: 2.5rem;
+			font-size: 1rem;
+		}
+		.contact-detail {
+			display: flex;
+			align-items: flex-start;
+			gap: 1rem;
+			margin-bottom: 1.8rem;
+		}
+		.contact-detail-icon {
+			width: 44px;
+			height: 44px;
+			border-radius: 50%;
+			background: rgba(85, 106, 61, 0.12);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-shrink: 0;
+		}
+		.contact-detail-icon svg { stroke: #556a3d; }
+		.contact-detail-text strong {
+			display: block;
+			font-size: 0.8rem;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			color: #556a3d;
+			margin-bottom: 0.25rem;
+		}
+		.contact-detail-text p,
+		.contact-detail-text a {
+			color: #333;
+			font-size: 0.98rem;
+			line-height: 1.5;
+			text-decoration: none;
+		}
+		.contact-detail-text a:hover { color: #556a3d; }
+
+		.contact-socials { margin-top: 2.5rem; }
+		.contact-socials strong {
+			display: block;
+			font-size: 0.8rem;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			color: #556a3d;
+			margin-bottom: 1rem;
+		}
+		.social-links { display: flex; gap: 0.8rem; flex-wrap: wrap; }
+		.social-link {
+			display: flex;
+			align-items: center;
+			gap: 0.5rem;
+			padding: 0.5rem 1rem;
+			border: 1.5px solid #ddd;
+			border-radius: 8px;
+			color: #333;
+			font-size: 0.9rem;
+			text-decoration: none;
+			transition: all 0.3s ease;
+		}
+		.social-link:hover {
+			border-color: #556a3d;
+			color: #556a3d;
+			background: rgba(85, 106, 61, 0.05);
+		}
+
+		/* Form panel */
+		.contact-form-wrap {
+			flex: 2 1 400px;
+			background: white;
+			border-radius: 20px;
+			padding: 2.5rem;
+			box-shadow: 0 4px 30px rgba(0,0,0,0.07);
+		}
+		.contact-form-wrap h2 {
+			font-size: 1.6rem;
+			font-weight: 300;
+			color: #111;
+			margin-bottom: 0.4rem;
+		}
+		.contact-form-wrap > p {
+			color: #666;
+			margin-bottom: 2rem;
+			font-size: 0.95rem;
+		}
+		.form-row {
+			display: flex;
+			gap: 1.2rem;
+			flex-wrap: wrap;
+		}
+		.form-group {
+			display: flex;
+			flex-direction: column;
+			flex: 1 1 200px;
+			margin-bottom: 1.4rem;
+		}
+		.form-group label {
+			font-size: 0.8rem;
+			text-transform: uppercase;
+			letter-spacing: 1.5px;
+			color: #556a3d;
+			margin-bottom: 0.5rem;
+			font-weight: 600;
+		}
+		.form-group input,
+		.form-group select,
+		.form-group textarea {
+			padding: 0.75rem 1rem;
+			border: 1.5px solid #e0e0e0;
+			border-radius: 10px;
+			font-family: 'Cabin', sans-serif;
+			font-size: 1rem;
+			color: #222;
+			background: #fafafa;
+			transition: border-color 0.3s ease, box-shadow 0.3s ease;
+			outline: none;
+			letter-spacing: 0.5px;
+			width: 100%;
+		}
+		.form-group input:focus,
+		.form-group select:focus,
+		.form-group textarea:focus {
+			border-color: #556a3d;
+			box-shadow: 0 0 0 3px rgba(85, 106, 61, 0.12);
+			background: white;
+		}
+		.form-group textarea {
+			resize: vertical;
+			min-height: 130px;
+		}
+		.form-group select {
+			cursor: pointer;
+			appearance: none;
+			background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23556a3d' stroke-width='2'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+			background-repeat: no-repeat;
+			background-position: right 1rem center;
+			padding-right: 2.5rem;
+		}
+		.form-note {
+			color: #999;
+			font-size: 0.8rem;
+			text-transform: none;
+			letter-spacing: 0;
+			font-weight: 400;
+		}
+
+		.form-submit {
+			display: inline-flex;
+			align-items: center;
+			gap: 0.6rem;
+			background: #556a3d;
+			color: white;
+			border: none;
+			padding: 0.9rem 2.5rem;
+			border-radius: 12px;
+			font-family: 'Cabin', sans-serif;
+			font-size: 1rem;
+			letter-spacing: 1px;
+			cursor: pointer;
+			transition: background 0.3s ease, transform 0.2s ease;
+			margin-top: 0.5rem;
+		}
+		.form-submit:hover {
+			background: #6b8a4e;
+			transform: translateY(-2px);
+		}
+		.form-submit svg { transition: transform 0.3s ease; }
+		.form-submit:hover svg { transform: translateX(4px); }
+
+		.form-success {
+			display: none;
+			background: rgba(85, 106, 61, 0.08);
+			border: 1.5px solid #556a3d;
+			border-radius: 12px;
+			padding: 1.5rem;
+			margin-top: 1.5rem;
+			color: #2d4a1e;
+			font-size: 1rem;
+			line-height: 1.6;
+		}
+		.form-success.visible { display: block; }
+
+		/* Location strip */
+		.contact-map-strip {
+			background: #111;
+			padding: 4rem;
+			display: flex;
+			flex-wrap: wrap;
+			gap: 2rem;
+			align-items: center;
+			justify-content: space-between;
+		}
+		.contact-map-text h2 {
+			color: white;
+			font-size: 1.8rem;
+			font-weight: 300;
+			margin-bottom: 0.5rem;
+		}
+		.contact-map-text p { color: #999; line-height: 1.7; }
+		.contact-map-address {
+			color: #ccc;
+			line-height: 2;
+			font-size: 0.95rem;
+			border-left: 2px solid #556a3d;
+			padding-left: 1.5rem;
+		}
+
+		@media (max-width: 700px) {
+			.contact-hero { padding: 8rem 2rem 4rem 2rem; }
+			.contact-body { padding: 3rem 1.5rem; }
+			.contact-map-strip { padding: 3rem 1.5rem; }
+			.form-row { flex-direction: column; gap: 0; }
+			.contact-info { max-width: 100%; }
+		}
+	</style>
 </head>
 <body>
+
 <!-- HEADER -->
 	<div class="header">
-  		<div class="header__inner">
-    		<div class="header-logo fade-left delay-1">
-      			<a href="#home" class="header-logo__inner" aria-label="Home">
-        			<img src="images/Logo.png" alt="Poutama Solutions Logo">
-      			</a>
-    		</div>
-    		<nav class="site-nav">
-      			<ul class="site-nav__desktop">
-        			<div class="scale-transform"><li class="nav fade-right delay-1"><a href="#hero">Home</a></li></div>
-        			<div class="scale-transform"><li class="nav fade-right delay-2"><a href="#about">About</a></li></div>
-        			<div class="scale-transform"><li class="nav fade-right delay-3"><a href="#capability">Capability</a></li></div>
-        			<div class="scale-transform"><li class="nav fade-right delay-4"><a href="#whypoutama">Why Poutama?</a></li></div>
-        			<div class="scale-transform"><li class="nav fade-right delay-5"><a href='/services'>Services</a></li></div>
-        			<div class="scale-transform"><li class="nav fade-right delay-6"><a href='/contact'>Contact</a></li></div>
-      			</ul>
-				<!-- MOBILE HAMBURGER-->
-      			<div class="hamburger">
-        			<span></span>
-        			<span></span>
-        			<span></span>
-      			</div>
-    		</nav>
-  		</div>
+		<div class="header__inner">
+			<div class="header-logo fade-left delay-1">
+				<a href="index.html" class="header-logo__inner" aria-label="Home">
+					<img src="images/Logo.png" alt="Poutama Solutions Logo">
+				</a>
+			</div>
+			<nav class="site-nav">
+				<ul class="site-nav__desktop">
+					<div class="scale-transform"><li class="nav fade-right delay-1"><a href="index.html">Home</a></li></div>
+					<div class="scale-transform"><li class="nav fade-right delay-2"><a href="index.html#about">About</a></li></div>
+					<div class="scale-transform"><li class="nav fade-right delay-3"><a href="index.html#capability">Capability</a></li></div>
+					<div class="scale-transform"><li class="nav fade-right delay-4"><a href="index.html#whypoutama">Why Poutama?</a></li></div>
+					<div class="scale-transform"><li class="nav fade-right delay-5"><a href="services.html">Services</a></li></div>
+					<div class="scale-transform"><li class="nav-active fade-right delay-6"><a href="contact.html">Contact</a></li></div>
+				</ul>
+				<div class="hamburger">
+					<span></span><span></span><span></span>
+				</div>
+			</nav>
+		</div>
 	</div>
-<!-- HERO -->
-	<section id="hero" class="hero gradient-overlay">
-  		<div class="hero-overlay">
-			<div class="fade-up delay-1">
-				<p class="hero-overlay-label">Aotearoa New Zealand</p>
-			</div>
-			<div class="fade-up delay-2">
-    			<h1>Poutama Solutions</h1>
-			</div>
-			<div class="fade-up delay-3">
-  				<p class="hero-overlay-description">Strategic NZ water infrastructure with community-led delivery</p>
-			</div>
-			<div class="hero-cta-group">
-				<div class="fade-up delay-4">
-    				<a class='cta shadow-xl' href='/contact'>Kōrero
-  		  			<svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 -4 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
-  	    			</a>
-				</div>
-				<div class="fade-up delay-5">
-	    			<a class='cta2 shadow-xl' href='/services'>Our Services</a>
-				</div>
-			</div>
-  		</div>
-	</section>
-<!-- ABOUT -->
-	<section id="about" class="about-section">
-    	<div class="about-section-text">
-	  		<div class="fade-left delay-2">
-	      		<p class="about-section-label">About</p>
-	 		</div>
-	  		<div class="fade-left delay-1">
-   	   	  		<h1>Our History</h1>
-	  		</div>
-	  		<div class="fade-left delay-3">
-      				<p class="about-section-description">
-    	   				Kia Ora and welcome to Poutama Solutions.
-						We are a Māori-led consultancy committed to helping iwi, hapū and communities turn vision into real, practical development.
-						From civil infrastructure to water supply, geothermal energy and complex project delivery, our team brings together deep expertise to 				support sustainable growth across Aotearoa.
-    	  			<br>
-   	   	  			<br>
-						Our focus is simple — strong foundations, strong communities, long-term impact.
-						If you’re an iwi, marae, trust or organisation looking to move a project forward, let’s kōrero.
-						The climb starts now.
-        			</p>
-	  		</div>
-    	</div>
-    	<div class="about-image fade-right delay-2">
-      		<img src="images/ROCK.JPG" alt="About Image" loading="lazy" class="shadow-xl">
-    	</div>
-		<div class="image-text-box fade-right delay-3 shadow-xl">
-			<p>Poutama</p>
-			<p>The staircase pattern representing progression, growth, and the pursuit of knowledge</p>
+
+<!-- HERO BANNER -->
+	<div class="contact-hero">
+		<div class="fade-up delay-1"><p class="contact-hero-label">Get in touch</p></div>
+		<div class="fade-up delay-2"><h1>Kōrero mai</h1></div>
+		<div class="fade-up delay-3">
+			<p>Have a project in mind? Whether you're an iwi, marae, trust, or community organisation — let's start a conversation.</p>
 		</div>
-	</section>
-<!-- CAPABILITY STATEMENT -->
-	<section id="capability" class="capability-section">
-		<div>
-	  		<div class="fade-down delay-2">
-	    		<p class="capability-section-label">Our Capabilities</p>
-	  		</div>
-	  		<div class="fade-down delay-1">
-	    		<h1>Outcomes-driven delivery</h1>
-	  		</div>
-	  		<div class="fade-down delay-3">
-	    		<p class="capability-section-text">We work alongside marae, trusts, and councils to deliver sustainable infrastructure solutions across water, land development, renewable energy, and community assets</p>
- 	 		</div>
-			<div class="card-container">
-				<div class="scale-transform">
-	  				<div class="card fade-up delay-4 shadow-xl">
-		    			<h2 class="card-title fade-section visible">Strategic Advice</h2>
-		    			<div class="card-text fade-section visible">
-			    			<p>Expert guidance to navigate complex decisions and unlock opportunities for your community projects</p>
-		    			</div>
-	   				</div>
+	</div>
+
+<!-- CONTACT BODY -->
+	<section class="contact-body">
+
+		<!-- Info Panel -->
+		<div class="contact-info fade-left delay-2">
+			<h2>Let's kōrero</h2>
+			<p>We're based in Hastings and work across Aotearoa. Reach out and we'll get back to you within two working days.</p>
+
+			<div class="contact-detail">
+				<div class="contact-detail-icon">
+					<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+						<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.76 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.7 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.69 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l.86-.86a2 2 0 0 1 2.11-.45c.91.33 1.85.56 2.81.69A2 2 0 0 1 22 16.92z"/>
+					</svg>
 				</div>
-				<div class="scale-transform">
-      				<div class="card fade-up delay-5 shadow-xl">
-		    			<h2 class="card-title fade-section visible">Feasibility Assessments</h2>
-		    			<div class="card-text fade-section visible">
-			    			<p>Thorough analysis to ensure your project is viable, sustainable, and aligned with community aspirations</p>
-		    			</div>
-	   				</div>
+				<div class="contact-detail-text">
+					<strong>Phone</strong>
+					<a href="tel:+64275786477">+64 027 578 6477</a>
 				</div>
-				<div class="scale-transform">
-      				<div class="card fade-up delay-6 shadow-xl">
-		    			<h2 class="card-title fade-section visible">Compliance Oversight</h2>
-		    			<div class="card-text fade-section visible">
-			        		<p>Navigate regulatory requirements with confidence—from consents to safety standards</p>
-		    			</div>
-	   				</div>
+			</div>
+
+			<div class="contact-detail">
+				<div class="contact-detail-icon">
+					<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+						<rect width="20" height="16" x="2" y="4" rx="2"/>
+						<path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+					</svg>
 				</div>
-				<div class="scale-transform">
-      				<div class="card fade-up delay-7 shadow-xl">
-		    			<h2 class="card-title fade-section visible">Project Management</h2>
-		    			<div class="card-text fade-section visible">
-			        		<p>Hands-on delivery from concept to completion, keeping your project on track and on budget</p>
-		    			</div>
-	   				</div>
+				<div class="contact-detail-text">
+					<strong>Email</strong>
+					<a href="mailto:poutamasolutions@gmail.com">poutamasolutions@gmail.com</a>
+				</div>
+			</div>
+
+			<div class="contact-detail">
+				<div class="contact-detail-icon">
+					<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+						<path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+						<circle cx="12" cy="10" r="3"/>
+					</svg>
+				</div>
+				<div class="contact-detail-text">
+					<strong>Address</strong>
+					<p>1255 Omahu Rd<br>RD5 Hastings, 4175<br>Hawke's Bay, New Zealand</p>
+				</div>
+			</div>
+
+			<div class="contact-socials">
+				<strong>Follow us</strong>
+				<div class="social-links">
+					<a class="social-link" href="https://www.facebook.com/people/Poutama-Solutions/61585918606693/" target="_blank" rel="noopener">
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+						Facebook
+					</a>
+					<a class="social-link" href="https://www.instagram.com/poutamasolutions/" target="_blank" rel="noopener">
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+						Instagram
+					</a>
 				</div>
 			</div>
 		</div>
-	</section>
-<!-- WHY POUTAMA -->
-	<section id="whypoutama" class="whypoutama-section">
-  		<div>
-			<div class="fade-down delay-1">
-				<p class="whypoutama-label">Our focus areas</p>
+
+		<!-- Form Panel -->
+		<div class="contact-form-wrap fade-right delay-2">
+			<h2>Send us a message</h2>
+			<p>Fill in the form below and we'll be in touch soon.</p>
+
+			<form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+				<div class="form-row">
+					<div class="form-group">
+						<label for="firstName">First name</label>
+						<input type="text" id="firstName" name="firstName" placeholder="Tāne" required>
+					</div>
+					<div class="form-group">
+						<label for="lastName">Last name</label>
+						<input type="text" id="lastName" name="lastName" placeholder="Māhaki" required>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="email">Email address</label>
+					<input type="email" id="email" name="email" placeholder="tane@example.co.nz" required>
+				</div>
+
+				<div class="form-group">
+					<label for="phone">Phone <span class="form-note">(optional)</span></label>
+					<input type="tel" id="phone" name="phone" placeholder="+64 021 000 0000">
+				</div>
+
+				<div class="form-group">
+					<label for="organisation">Organisation / Iwi / Hapū</label>
+					<input type="text" id="organisation" name="organisation" placeholder="e.g. Ngāti Whatsit Trust">
+				</div>
+
+				<div class="form-group">
+					<label for="service">Area of interest</label>
+					<select id="service" name="service">
+						<option value="" disabled selected>Select a service area...</option>
+						<option value="strategic-advice">Strategic Advice</option>
+						<option value="feasibility">Feasibility Assessments</option>
+						<option value="compliance">Compliance Oversight</option>
+						<option value="project-management">Project Management</option>
+						<option value="general">General Enquiry</option>
+					</select>
+				</div>
+
+				<div class="form-group">
+					<label for="message">Your message</label>
+					<textarea id="message" name="message" placeholder="Tell us about your project or how we can help..." required></textarea>
+				</div>
+
+				<button type="submit" class="form-submit">
+					Send message
+					<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 -4 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+				</button>
+			</form>
+
+			<div class="form-success" id="formSuccess">
+				<strong>Ngā mihi!</strong> Your message has been sent. We'll be in touch within two working days.
 			</div>
-			<div class="fade-down delay-2">
-				<h1>Why Poutama?</h1>
-			</div>
-			<div class="fade-down delay-3">
-	  			<p>We help unlock funding opportunities and deliver resilient solutions across key infrastructure areas.</p>
-			</div>
-    		<div class="whypoutama-text fade-left delay-3 shadow-xl">
-    			<p>Rooted in the kaupapa of poutama—progression and growth—we provide strategic advice, feasibility assessments, compliance oversight, and hands-on project management. Our approach is grounded, transparent, and culturally informed.
-    			</p>
-    		</div>
-   			<div class="whypoutama-list fade-right delay-3">
-        		<ul>
-    				<li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check w-5 h-5 text-emerald-600 flex-shrink-0"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg>
-						Grounded and transparent approach</li>
-    				<li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check w-5 h-5 text-emerald-600 flex-shrink-0"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg>
-						Culturally informed practice</li>
-    				<li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check w-5 h-5 text-emerald-600 flex-shrink-0"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg>
-						Community-led decision making</li>
-    				<li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check w-5 h-5 text-emerald-600 flex-shrink-0"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg>
-						Sustainable, long-term outcomes</li>
-    			</ul>
-    		</div>
-  		</div>
-	</section>
-<!-- CALL TO ACTION -->
-	<section class="cta-section">
-		<div class="fade-down delay-1">
-	  		<h1 class="cta-section-header">Ready to bring your community project to life?</h1>
-		</div>
-		<div class="fade-down delay-2">
-	  		<p>Let's kōrero about how we can support your marae, trust, or community organisation </p>
-		</div>
-		<div class="fade-down delay-3">
-   	  		<a class='cta shadow-xl' href='/contact'>Get in touch
-  	  			<svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 -4 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
- 	  		</a>
 		</div>
 	</section>
+
+<!-- LOCATION STRIP -->
+	<div class="contact-map-strip">
+		<div class="contact-map-text fade-left delay-2">
+			<h2>Find us</h2>
+			<p>Based in Hastings, Hawke's Bay — working across Aotearoa.</p>
+		</div>
+		<div class="contact-map-address fade-right delay-2">
+			<p>1255 Omahu Rd</p>
+			<p>RD5 Hastings, 4175</p>
+			<p>Hawke's Bay, New Zealand</p>
+		</div>
+	</div>
+
 <!-- FOOTER -->
 	<footer>
 		<div>
 			<div class="footer-biography">
- 				<div class="footer-logo">
+				<div class="footer-logo">
 					<img src="images/LogoFooter.png" alt="Poutama Solutions logo">
-		    		<h3>Poutama Solutions</h3>
-   		 		</div>
-    			<div class="footer-text">
-    				<p>Strengthening marae and small communities through practical, outcomes-driven delivery across Aotearoa New Zealand</p>
-   				</div>
+					<h3>Poutama Solutions</h3>
+				</div>
+				<div class="footer-text">
+					<p>Strengthening marae and small communities through practical, outcomes-driven delivery across Aotearoa New Zealand</p>
+				</div>
 			</div>
 			<div class="footer-links">
 				<h3>Quick Links</h3>
@@ -247,6 +512,28 @@
 			</div>
 		</div>
 	</footer>
+
 <script src="main.js"></script>
+<script>
+	// Form handler — currently shows a success message client-side.
+	// To actually send emails, sign up at formspree.io, create a form,
+	// and replace YOUR_FORM_ID in the action URL above.
+	const form = document.getElementById('contactForm');
+	const successMsg = document.getElementById('formSuccess');
+
+	form.addEventListener('submit', function(e) {
+		e.preventDefault();
+		// Basic validation
+		const required = form.querySelectorAll('[required]');
+		let valid = true;
+		required.forEach(field => {
+			if (!field.value.trim()) { field.style.borderColor = '#c0392b'; valid = false; }
+			else { field.style.borderColor = ''; }
+		});
+		if (!valid) return;
+		form.style.display = 'none';
+		successMsg.classList.add('visible');
+	});
+</script>
 </body>
 </html>

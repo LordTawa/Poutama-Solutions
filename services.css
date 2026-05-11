@@ -822,3 +822,148 @@ footer > div {
 	width: 90%;
   }
 }
+
+
+/* ── Service Sections ── */
+
+.service-section {
+	padding: 5rem 4rem;
+}
+
+.service-section--light {
+	background: whitesmoke;
+}
+
+.service-section--dark {
+	background: #1a1a1a;
+	background-image: url('images/Dark-Background.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+.service-inner {
+	display: flex;
+	align-items: center;
+	gap: 4rem;
+	max-width: 1200px;
+	margin: 0 auto;
+	flex-wrap: wrap;
+}
+
+.service-inner--reversed {
+	flex-direction: row-reverse;
+}
+
+/* Text side */
+.service-text {
+	flex: 1 1 340px;
+}
+
+.service-label {
+	font-size: 0.85rem;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	color: #556a3d;
+	margin-bottom: 0.8rem;
+	font-weight: 600;
+}
+
+.service-label--light {
+	color: #89ae71;
+}
+
+.service-text h2 {
+	font-size: clamp(1.8rem, 3vw, 2.6rem);
+	font-weight: 300;
+	color: #111;
+	margin-bottom: 1.2rem;
+	line-height: 1.2;
+}
+
+.service-heading--light {
+	color: white !important;
+}
+
+.service-description {
+	color: #444;
+	font-size: 1.05rem;
+	line-height: 1.75;
+	margin-bottom: 2rem;
+}
+
+.service-description--light {
+	color: #bbb;
+}
+
+.service-list {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	gap: 0.8rem;
+}
+
+.service-list li {
+	display: flex;
+	align-items: center;
+	gap: 0.75rem;
+	font-size: 1rem;
+	color: #333;
+}
+
+.service-list--light li {
+	color: #ccc;
+}
+
+/* Image side */
+.service-image {
+	flex: 1 1 340px;
+	border-radius: 20px;
+	overflow: hidden;
+}
+
+.service-image img {
+	width: 100%;
+	height: 380px;
+	object-fit: cover;
+	border-radius: 20px;
+	display: block;
+}
+
+/* Placeholder when no image yet */
+.service-image-placeholder {
+	width: 100%;
+	height: 380px;
+	background: rgba(85, 106, 61, 0.08);
+	border-radius: 20px;
+	border: 2px dashed rgba(85, 106, 61, 0.25);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+	color: #999;
+	font-size: 0.9rem;
+	letter-spacing: 1px;
+}
+
+.service-section--dark .service-image-placeholder {
+	background: rgba(255,255,255,0.04);
+	border-color: rgba(255,255,255,0.1);
+	color: #555;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+	.service-section {
+		padding: 3.5rem 1.5rem;
+	}
+	.service-inner,
+	.service-inner--reversed {
+		flex-direction: column;
+		gap: 2.5rem;
+	}
+	.service-image img,
+	.service-image-placeholder {
+		height: 260px;
+	}
+}
